@@ -1,0 +1,141 @@
+{% load url from future %}
+{% load i18n %}   
+<style type="text/css" media="screen,print">
+
+	
+/* Disable properties specified in the imported CSS file */
+	
+
+/* Actual menu CSS starts here */
+	
+		.menu a:hover,
+			.menu a:focus,
+			.menu a:active {background:#d9dcb0;}
+			.menu ul li {padding-left:15px;}
+			.menu ul a {background:#ced174;}
+			.hidden {display:none;}
+</style>
+<script type="text/javascript" >
+var toggleMenu = {
+	init : function(sContainerClass, sHiddenClass) {
+		//sHiddenClass=Hidden
+		if (!document.getElementById || !document.createTextNode) {return;} // Check for DOM support
+		//sContainerClass = menu
+		//得到
+		var arrMenus = this.getElementsByClassName(document, 'li', sContainerClass);
+		
+		var arrSubMenus, oSubMenu, oLink;
+		//var lens=arrMenus[0].getElementsByTagName('ul');
+		//alert(lens.length);
+		for (var i = 0; i < arrMenus.length; i++) {
+			arrSubMenus = document.getElementById('hidden_ul');
+			alert(arrSubMenus.length);
+			for (var j = 0; j < arrSubMenus.length; j++) {
+				oSubMenu = arrSubMenus[j];
+				oLink = oSubMenu.parentNode.getElementsByTagName('a')[0];
+				oLink.onclick = function(){toggleMenu.toggle(this.parentNode.getElementsByTagName('ul')[0], sHiddenClass); return false;}
+				this.toggle(oSubMenu, sHiddenClass);
+			}
+		}
+	},
+	toggle : function(el, sHiddenClass) {
+		var oRegExp = new RegExp("(^|\\s)" + sHiddenClass + "(\\s|$)");
+		alert('test');
+		el.className = (oRegExp.test(el.className)) ? el.className.replace(oRegExp, '') : el.className + ' ' + sHiddenClass; // Add or remove the class name that hides the element
+	},
+/* addEvent function from http://www.quirksmode.org/blog/archives/2005/10/_and_the_winner_1.html */
+	addEvent : function(obj, type, fn) {
+		if (obj.addEventListener)
+			obj.addEventListener(type, fn, false);
+		else if (obj.attachEvent) {
+			obj["e"+type+fn] = fn;
+			obj[type+fn] = function() {obj["e"+type+fn](window.event);}
+			obj.attachEvent("on"+type, obj[type+fn]);
+		}
+	},
+/*
+Written by Jonathan Snook, http://www.snook.ca/jonathan
+Add-ons by Robert Nyman, http://www.robertnyman.com
+*/
+	getElementsByClassName : function(oElm, strTagName, strClassName){
+		//strTagName = li ,strClassName=menu
+	    var arrElements = (strTagName == "*" && document.all)? document.all : oElm.getElementsByTagName(strTagName);
+		/*
+		var test=oElm.getElementsByTagName("active");
+		alert(test.length)
+		for (i = 0; i < test.length; i++) { 
+		var ele=test[i];//取某一个元素 
+		//some code here 
+		alert(ele);
+		} 
+		*/
+		//alert('arrElements:'+arrElements);
+	    var arrReturnElements = new Array();
+	    strClassName = strClassName.replace(/\-/g, "\\-");
+	    var oRegExp = new RegExp("(^|\\s)" + strClassName + "(\\s|$)");
+	    var oElement;
+		//var test1=oRegExp.test("memu");
+		//alert(test1);
+		//alert(oRegExp.test("(^|\\s)" + strClassName + "(\\s|$)");
+	    for(var i=0; i<arrElements.length; i++){
+	        oElement = arrElements[i];     
+			//alert(oElement.className);
+			var teststr=oElement.className;
+			
+	        //var test1=oRegExp.test("menu");
+			//alert(test1)
+			
+			//if(oRegExp.test(oElement.className)){
+			if(oElement.className="menu"){
+				//alert('true');
+	            arrReturnElements.push(oElement);
+	        }   
+	    }
+		
+	    return (arrReturnElements)
+	}
+};
+toggleMenu.addEvent(window, 'load', function(){toggleMenu.init('memu','hidden');});
+
+
+</script>
+<div class="well sidebar-nav">
+            <ul class="nav nav-list">
+			
+			
+              <li class="nav-header">{% trans 'SubSytem'%}
+				
+			  </li>
+              
+			 <li class="menu" >
+					<li class="active"><a href="#">VES</a>
+						<ul id='hidden_ul'>
+							<li><a href="/">Sub category 1a</a></li>
+							<li><a href="/">Sub category 1b</a></li>
+							<li><a href="/">Sub category 1c</a></li>
+							<li><a href="/">Sub category 1d</a></li>
+						</ul>
+					</li>
+					<li><a href="{% url 'fileserver_browse' 'VDS' %}">VDS</a>
+						<ul id='hidden_ul'>
+							<li><a href="/">Sub category 2a</a></li>
+							<li><a href="/">Sub category 2b</a></li>
+							<li><a href="/">Sub category 2c</a></li>
+							<li><a href="/">Sub category 2d</a></li>
+						</ul>
+					</li>
+			  </li>
+              <li><a href="{% url 'fileserver_browse' 'ICMS' %}">ICMS</a></li>
+              <li><a href="{% url 'fileserver_browse' 'VMS' %}">VMS</a></li>
+			  <li><a href="{% url 'fileserver_browse' 'ITIL' %}">ITIL</a></li>
+			  <li><a href="{% url 'fileserver_browse' 'UTCS' %}">UTCS</a></li>	
+              <li class="nav-header">{% trans 'CronSystem'%}</li>
+              <li><a href="#">Backup</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">{% trans 'Statistics'%}</li>
+              <li><a href="#">Disk</a></li>
+              <li><a href="#">Access</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+</div><!--/.well -->
