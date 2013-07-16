@@ -24,3 +24,6 @@ urlpatterns += patterns('',
 	url(r'^filemanager/',include('filemanager.urls')),
 	)
 
+urlpatterns += patterns('',
+        url(r'^cron/',include('cron.urls')),
+        )
