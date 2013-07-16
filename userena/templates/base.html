@@ -1,0 +1,50 @@
+{% load i18n %}
+{% load url from future %}
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>{% block title %} 标题 {% endblock %}</title>
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/layout.css">
+	<link rel="stylesheet" href="/static/css/bootstrap-responsive.css">
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#">{% trans 'BOCOITMS FILE SYSTEM' %}</a>  
+		</div>
+      </div>
+    </div>
+	<hr>
+    <div class="container-fluid">
+
+      <div class="content">
+        <div class="page-header">
+          <h1>{% block pagename %} {% trans 'Welccome to BocoItms File System' %} {% endblock %}</h1>
+        </div>
+		  <div id="body">
+		{% block body %}
+			<div class="content_title">
+				{% block content_title %}{% endblock %}
+			</div>
+			<div class="content">
+			{% block content %}
+			{% endblock %}
+			</div>
+		{% endblock %}
+		</div>
+	</div><!-- /content -->
+
+	
+</div><!-- /container -->
+</body>
+</html>

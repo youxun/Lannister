@@ -1,0 +1,45 @@
+{% extends 'userena/base_userena.html' %}
+{% load i18n %}
+{% load url from future %}
+{% block title %}{% trans "Signin" %}{% endblock %}
+
+{% block content %}
+<div class="span8">
+<form class="form-horizontal" action="" method="post">
+  {% csrf_token %}
+	<fieldset>
+    {{ form.non_field_errors }}
+    {% for field in form %}
+    {{ field.errors }}
+    {% comment %} Displaying checkboxes differently {% endcomment %}
+    {% if field.name == 'remember_me' %}
+    <div class="control-group">
+		<div class="controls">
+			<label class="control-label" class="checkbox" for="id_{{ field.name }}">{{field}}{{field.label}}
+			</label>
+			<button type="submit" class="btn">Sign in</button
+		</div>
+	</div>
+	{% elif field.name == 'password' %}
+	<div class="control-group">
+		<label class="control-label" for="inputPassword">{{ field.label }}</label>
+		<div class="controls">
+			{{field}}
+		{% if next %}
+			<input type="hidden" name="next" value="{{ next }}" />
+		{% endif %} 
+		</div>
+	</div>
+    {% else %}
+    <div class="control-group">
+		<label class="control-label" for="inputEmail">{{field.label}}</label> 
+		<div class="controls">
+			{{ field }} 
+		</div>
+    </div>
+    {% endif %}
+    {% endfor %}
+	</fieldset>
+</form>
+</div>  
+{% endblock %}
