@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-09 15:03+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\accounts\models.py:11
+msgid "user"
+msgstr "用户"
+
+#: .\accounts\models.py:13
+msgid "favourite snack"
+msgstr "喜好"
+
+#: .\filemanager\forms.py:18
+msgid "Wrong password"
+msgstr "错误的密码"
+
+#: .\filemanager\forms.py:41
+msgid "The File has changed"
+msgstr "文件已经改变"
+
+#: .\filemanager\settings.py:39
+msgid "German"
+msgstr "德语"
+
+#: .\filemanager\settings.py:40
+msgid "English"
+msgstr "英语"
+
+#: .\filemanager\views.py:103
+#, python-format
+msgid "Error in \"%(newdir)s\": %(error)s"
+msgstr ""
+
+#: .\filemanager\views.py:160
+msgid "Do not reload this page!"
+msgstr "请不要重载或刷新这个页面！"
+
+#: .\filemanager\views.py:198
+msgid "You can not undo the deletion"
+msgstr "警告:此文件会被永久性删除！"
+
+#: .\filemanager\views.py:217
+#, python-format
+msgid "Error in \"%(path)s\": %(error)s"
+msgstr ""
+
+#: .\filemanager\templates\fileserver\browse.html.py:11
+msgid "This directory is empty."
+msgstr "此文件夹为空！"
+
+#: .\filemanager\templates\fileserver\browse.html.py:17
+msgid "Name"
+msgstr "文件名"
+
+#: .\filemanager\templates\fileserver\browse.html.py:18
+msgid "Size"
+msgstr "大小"
+
+#: .\filemanager\templates\fileserver\create_subdirectory.html.py:4
+#: .\filemanager\templates\fileserver\create_subdirectory.html.py:12
+#: .\filemanager\templates\fileserver\tabs.html.py:21
+msgid "Create Directory"
+msgstr "创建目录"
+
+#: .\filemanager\templates\fileserver\create_subdirectory.html.py:13
+#: .\filemanager\templates\fileserver\update_directory.html.py:35
+msgid "Reset"
+msgstr "重置"
+
+#: .\filemanager\templates\fileserver\frontpage.html.py:6
+msgid "Wellcome to"
+msgstr "欢迎来到"
+
+#: .\filemanager\templates\fileserver\frontpage.html.py:11
+msgid ""
+"<p>Wellcome to Fileserver. This is a place for you to store\n"
+"    and exchange some of your data. You can upload and downlaod files, "
+"create\n"
+"    directorys and use some other little features.\n"
+"    </p><p>Have fun!</p>"
+msgstr ""
+"<p>轻松实现文件存储管理\n </p>"
+
+
+#: .\filemanager\templates\fileserver\frontpage.html.py:16
+msgid "Browse And Download Files"
+msgstr "浏览或者下载文件"
+
+#: .\filemanager\templates\fileserver\frontpage.html.py:19
+msgid "Upload Files"
+msgstr "上传文件"
+
+#: .\filemanager\templates\fileserver\login.html.py:4
+#: .\filemanager\templates\fileserver\page.html.py:12
+msgid "Login"
+msgstr "登陆"
+
+#: .\filemanager\templates\fileserver\login.html.py:11
+msgid "Log Me In"
+msgstr "登陆"
+
+#: .\filemanager\templates\fileserver\page.html.py:14
+msgid "Logout"
+msgstr "退出"
+
+#: .\filemanager\templates\fileserver\tabs.html.py:7
+msgid "Browse"
+msgstr "浏览"
+
+#: .\filemanager\templates\fileserver\tabs.html.py:14
+#: .\filemanager\templates\fileserver\upload.html.py:4
+#: .\filemanager\templates\fileserver\upload.html.py:20
+msgid "Upload"
+msgstr "上传"
+
+#: .\filemanager\templates\fileserver\tabs.html.py:28
+#: .\filemanager\templates\fileserver\update_directory.html.py:4
+msgid "Edit Directory"
+msgstr "编辑目录"
+
+#: .\filemanager\templates\fileserver\todo.html.py:4
+msgid "Please Write your TODOs"
+msgstr "请按要求填写"
+
+#: .\filemanager\templates\fileserver\todo.html.py:12
+msgid "Save"
+msgstr "保存"
+
+#: .\filemanager\templates\fileserver\update_directory.html.py:12
+msgid "Directory Or File Name"
+msgstr "目录或文件名"
+
+#: .\filemanager\templates\fileserver\update_directory.html.py:13
+msgid "Delete"
+msgstr "删除"
+
+#: .\filemanager\templates\fileserver\update_directory.html.py:29
+msgid "Mark All"
+msgstr "全选"
+
+#: .\filemanager\templates\fileserver\update_directory.html.py:34
+msgid "Save Changes"
+msgstr "保存"
+
+#: .\filemanager\templates\fileserver\upload.html.py:7
+msgid "Select one or more files:"
+msgstr "选择一个或多个文件"
+
+#: .\filemanager\templates\fileserver\upload.html.py:16
+msgid "Add Upload Field"
+msgstr "上传文件"
+
+#: .\site_proj\test.html.py:63
+msgid "login"
+msgstr "登陆"
+
+#: .\site_proj\templates\nav_right.html.py:6
+msgid "SubSytem"
+msgstr "存储管理"
+
+#: .\site_proj\templates\nav_right.html.py:13
+msgid "CronSystem"
+msgstr "任务管理"
+
+#: .\site_proj\templates\nav_right.html.py:20
+msgid "Statistics"
+msgstr "统计图表"
+
+#: .\site_proj\templates\nav_top.html.py:11
+msgid "BOCOITMS FILE MANAGER SYSTEM"
+msgstr "BOCOITMS存储管理系统"
+
+#: .\site_proj\templates\nav_top.html.py:14
+msgid "Logged in as"
+msgstr "已登陆"
+
+#: .\site_proj\templates\nav_top.html.py:17
+msgid "Home"
+msgstr "主页"
+
+#: .\site_proj\templates\nav_top.html.py:18
+msgid "About"
+msgstr "关于"
+
+#: .\site_proj\templates\nav_top.html.py:19
+msgid "Contact"
+msgstr "联系我们"
