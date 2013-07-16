@@ -1,0 +1,36 @@
+{% extends 'fileserver/page.html' %}
+{% load i18n %}
+
+{% block headline %}{% trans 'Upload' %}{% endblock %}
+
+{% block content %}
+<p>{% trans 'Select one or more files:' %}</p>
+<form enctype="multipart/form-data" action="" method="post">
+  {% csrf_token %}
+  {{ formset.management_form }}
+  {% for form in formset %}
+    <p>{{ form.file }}</p>
+  {% endfor %}
+  <div class="container">
+    <a id="add_more" class="btn btn-block" >
+      <i class="icon-plus"></i> {% trans 'Add Upload Field' %}
+    </a>
+  </div>
+  <div class="form-actions">
+    <button class="btn btn-primary" type="submit">{% trans 'Upload' %}</button>
+  </div>
+</form>
+{% endblock content %}
+
+{% block scripts %}
+{{ block.super }}
+<script type="text/javascript">
+  $('#add_more').click(function () {
+    cloneMore('form p:last', 'form');
+  });
+  $('.alert.alert-warning').hide();
+  $('form').submit(function () {
+    $('.alert.alert-warning').slideDown();
+  });
+</script>
+{% endblock scripts %}

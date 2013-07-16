@@ -1,0 +1,16 @@
+{% extends 'fileserver/page.html' %}
+{% load i18n %}
+
+{% block headline %}{% trans 'Please Write your TODOs' %}{% endblock %}
+
+{% block content %}
+<form action="" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+
+  <div class="form-actions">
+    <button class="btn btn-primary" type="submit">{% trans 'Save' %}</button>
+    <button class="btn" type="reset">reset</button>
+  </div>
+</form>
+{% endblock content %}

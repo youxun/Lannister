@@ -1,0 +1,43 @@
+{% extends 'fileserver/page.html' %}
+{% load i18n %}
+{% load url from future %}
+
+{% block headline %}{{ path|last|last }}{% endblock %}
+
+{% block content %}
+{% if directory.is_empty %}
+<div>
+  <p>
+    <i>{% trans 'This directory is empty.' %}</i>
+  </p>
+</div>
+{% else %}
+<table id="folder_table" class="table table-bordered">
+  <tr>
+    <th width="85%"><a href="{{ name_url }}">{% trans 'Name' %}</a></th>
+    <th><a href="{{ size_url }}">{% trans 'Size' %}</a></th>
+  </tr>
+  {% for subdirectory, path, items in directory.iter_subdirectories %}
+  <tr>
+    <td>
+      <a href="{% url 'fileserver_browse' path %}">
+        <i class="icon-folder-close"></i>{{ subdirectory }}
+      </a>
+      {% if items %}
+        <a class="pull-right" href="{% url 'fileserver_zip' path %}">
+          <i class="icon-download-alt"></i>
+        </a>
+      {% endif %}
+    </td>
+    <td>{{ items }}</td>
+  </tr>
+  {% endfor %}
+  {% for file, file_url, size in directory.iter_files %}
+  <tr>
+    <td><a href="{{ file_url }}">{{ file }}</a></td>
+    <td>{{ size }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endif %}
+{% endblock content %}

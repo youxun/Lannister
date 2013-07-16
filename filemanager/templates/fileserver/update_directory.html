@@ -1,0 +1,38 @@
+{% extends 'fileserver/page.html' %}
+{% load i18n %}
+
+{% block headline %}{% trans 'Edit Directory' %}{% endblock %}
+
+{% block content %}
+<form action="" method="post">
+  {% csrf_token %}
+  <table class="table table-bordered">
+  {{ formset.management_form }}
+  <tr>
+    <th width="96%">{% trans 'Directory Or File Name' %}</th>
+    <th>{% trans 'Delete' %}</th>
+  </tr>
+  {% for form in formset %}
+  <tr>
+    <td class="name {% if form.initial.is_directory %}directory{% else %}file{% endif %}name">
+      {{ form.old_name }}
+      {% if form.initial.is_directory %}
+      <i class="icon-folder-close"></i>
+      {% endif %}
+      <span>{{ form.new_name }}</span>
+    </td>
+    <td>{{ form.DELETE }}</td>
+  </tr>
+  {% endfor %}
+  <tr>
+    <td></td>
+    <td><a href="#" class="btn btn-mini">{% trans 'Mark All' %}</a></td>
+  </tr>
+  </table>
+
+  <div class="form-actions">
+    <button class="btn btn-primary" type="submit">{% trans 'Save Changes' %}</button>
+    <button class="btn" type="reset">{% trans 'Reset' %}</a>
+  </div>
+</form>
+{% endblock content %}
