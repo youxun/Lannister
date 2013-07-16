@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://twitter.github.io/bootstrap/examples/fluid.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+	<link href="static/nav.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="static/nav.js"></script>
+	<script>
+	
+
+	$(function($) { 
+		$("#optionsRadiosMinute1").click(function(){
+
+			$(this).parent().find("select").each(
+				function(){
+					$(this).removeAttr("disabled")
+				}
+			);
+			
+			
+			$("#optionsRadiosMinutue2").parent().find("input:not(:radio)").each(
+				function(){
+					$(this).attr("disabled","disabled");
+				}
+			);
+		})
+
+
+		$("#optionsRadiosMinutue2").click(function(){
+			$(this).parent().find("input").each(
+				function(){
+					$(this).removeAttr("disabled")
+				}
+			);
+			
+			$("#optionsRadiosMinute1").nextAll().find("select").each(
+				function(){
+					$(this).attr("disabled","disabled");
+				}
+			);
+		})
+
+		$("#optionsRadiosHours1").click(function(){
+			$("#optionsRadiosHours2").parent().find("input:not(:radio)").each(
+				function(){
+					$(this).attr("disabled","disabled");
+				}
+			);
+		})
+
+
+		$("#optionsRadiosHours2").click(function(){
+			$(this).parent().find("input").each(
+				function(){
+					$(this).removeAttr("disabled")
+				}
+			);
+		})
+
+		$("#optionsRadiosHours1").click(function(){
+			$("#optionsRadiosHours2").parent().find("input:not(:radio)").each(
+				function(){
+					$(this).attr("disabled","disabled");
+				}
+			);
+		})
+
+
+		$("#optionsRadiosHours2").click(function(){
+			$(this).parent().find("input").each(
+				function(){
+					$(this).removeAttr("disabled")
+				}
+			);
+		})
+
+		$("#optionsRadiosDay1").click(function(){
+			$("#optionsRadiosDay2").parent().find("input:not(:radio)").each(
+				function(){
+					$(this).attr("disabled","disabled");
+				}
+			);
+		})
+
+
+		$("#optionsRadiosDay2").click(function(){
+			$(this).parent().find("input").each(
+				function(){
+					$(this).removeAttr("disabled")
+				}
+			);
+		})
+
+		$("#optionsRadiosMonth1").click(function(){
+			$("#optionsRadiosMonth2").parent().find("input:not(:radio)").each(
+				function(){
+					$(this).attr("disabled","disabled");
+				}
+			);
+		})
+
+
+		$("#optionsRadiosMonth2").click(function(){
+			$(this).parent().find("input").each(
+				function(){
+					$(this).removeAttr("disabled")
+				}
+			);
+		})
+
+
+		$("#optionsRadiosWeek1").click(function(){
+			$("#optionsRadiosWeek2").parent().find("input:not(:radio)").each(
+				function(){
+					$(this).attr("disabled","disabled");
+				}
+			);
+		})
+
+
+		$("#optionsRadiosWeek2").click(function(){
+			$(this).parent().find("input").each(
+				function(){
+					$(this).removeAttr("disabled")
+				}
+			);
+		})
+
+		
+
+		$('#tab5 :checkbox').click(function(){
+			
+			if(typeof($(this).attr('checked'))=="undefined")
+			{	
+				$(this).attr('checked','checked')
+				encheckbox();
+			}else{
+				$(this).removeAttr('checked')
+				uncheckbox();
+			}
+			
+		})
+		
+		
+
+
+		$("[id^='tab'] :radio").each(function(){
+				if(typeof($(this).attr('checked'))=="undefined")
+				{	
+					
+					$(this).nextAll().find("input").each(
+								function(){
+									$(this).attr("disabled", "disabled");
+									})
+				}
+		});
+		uncheckbox()
+		
+		function uncheckbox(){
+			$("#tab5 :checkbox").each(function(){
+				$(this).removeAttr('checked');
+				$("#tab5").find("input:not(:checkbox)").each(
+								function(){
+									$(this).attr("disabled", "disabled");
+									})
+				
+			});
+		}
+
+		function encheckbox(){
+			$("#tab5").find("input:not(:checkbox)").each(
+								function(){
+									$(this).removeAttr("disabled");
+									})	
+		}
+	  })
+    
+
+    
+       //
+    </script>
+	<style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+   
+  </head>
+
+  <body>
+        <div class="steps">
+            <ul class="blue 5steps">
+                <li class="completed"><a href="#"><em>Step 1</em><span>Description 1</span></a></li>
+                <li class="completedLast"><a href="#"><em>Step 2</em><span>Description 2</span></a></li>
+                <li class="current"><a href="#"><em>Step 3</em><span>Descripci&oacute;n del paso 1</span></a></li>		 
+			</ul>
+        </div>
+        <span style="clear:both; display:block;">&nbsp;</span>
+
+   <div id='ajax_page'>	
+   </div>
+
+
+	
+	
+    <input id='prev' class="btn btn-primary" type="button" value="<< prev" onclick="$('.steps').steps('prev');"/>
+    <input id='next' class="btn btn-primary" type="button" value="next >>" onclick="$('.steps').steps('next');"/>
+
+    <script src="./Bootstrap, from Twitter_files/bootstrap-transition.js"></script>
+    <script src="./Bootstrap, from Twitter_files/bootstrap-alert.js"></script>
+    <script src="./Bootstrap, from Twitter_files/bootstrap-modal.js"></script>
+    <script src="./Bootstrap, from Twitter_files/bootstrap-dropdown.js"></script>
+    <script src="./Bootstrap, from Twitter_files/bootstrap-scrollspy.js"></script>
+    <script src="./Bootstrap, from Twitter_files/bootstrap-tab.js"></script>
+    <script src="./Bootstrap, from Twitter_files/bootstrap-tooltip.js"></script>
+    <script src="./Bootstrap, from Twitter_files/bootstrap-popover.js"></script>
+    <script src="./Bootstrap, from Twitter_files/bootstrap-button.js"></script>
+    <script src="./Bootstrap, from Twitter_files/bootstrap-collapse.js"></script>
+    <script src="./Bootstrap, from Twitter_files/bootstrap-carousel.js"></script>
+    <script src="./Bootstrap, from Twitter_files/bootstrap-typeahead.js"></script>
+
+  
+
+</body></html>
