@@ -15,8 +15,9 @@ class IndexView(View):
         return render_to_response('cron_index.html')
 indexView = IndexView.as_view()
 
-@csrf_exempt
+
 class CreateView(View):
+    @csrf_exempt
     def get(self,request,*args,**kwargs):
         name = kwargs['step']
         c = {}
@@ -28,4 +29,5 @@ class CreateView(View):
              'step3': lambda:  render_to_response('cron_step3.html',rc)}[name]()
         except KeyError:
             raise Http404
+
 createView = CreateView.as_view()
