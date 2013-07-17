@@ -150,48 +150,81 @@ function Current_size(stack){ //获得线性堆栈的当前大小
 							break;  
 						default:  
 							break;
-						}  
+						}
+					
 					return objValue; 
 					},  
 				post_minute : function(){
-					if (JqGetValue('optionsRadiosMinute','radio')==1)
-					{
-						return JqGetValue('selectMinuteFrom','select')+'/'+JqGetValue('selectMinuteEvery','select');
+					if (post_datas.JqGetValue('optionsRadiosMinute','radio')==1)
+					{	
+						return post_datas.JqGetValue('selectMinuteFrom','select')+'/'+post_datas.JqGetValue('selectMinuteEvery','select');
 					}else{
-						return JqGetValue('minutecheckbox','checkbox');
+						return post_datas.JqGetValue('minutecheckbox','checkbox');
 					}
 				},
 				post_hour : function(){
-					return (JqGetValue('optionsRadiosHours','radio')==1)?('*'):JqGetValue('hourcheckbox','checkbox')
+					return (post_datas.JqGetValue('optionsRadiosHours','radio')==1)?('*'):post_datas.JqGetValue('hourcheckbox','checkbox')
 				},
 				post_month :	function(){
-					return (JqGetValue('optionsRadiosMonth','radio')==1)?('*'):JqGetValue('monthcheckbox','checkbox')
+					return (post_datas.JqGetValue('optionsRadiosMonth','radio')==1)?('*'):post_datas.JqGetValue('monthcheckbox','checkbox')
 				},	
 				post_day : function(){
-					return (JqGetValue('optionsRadiosDay','radio')==1)?('*'):JqGetValue('daycheckbox','checkbox')	
+					return (post_datas.JqGetValue('optionsRadiosDay','radio')==1)?('*'):post_datas.JqGetValue('daycheckbox','checkbox')	
 				},
 				post_week : function(){
-					if (JqGetValue('weekcheckbox','checkbox'))
+					if (post_datas.JqGetValue('weekcheckbox','checkbox'))
 					{
-					return (JqGetValue('optionsRadiosWeek','radio')==1)?('*'):JqGetValue('weekcheckbox','checkbox')
+					return (post_datas.JqGetValue('optionsRadiosWeek','radio')==1)?('*'):post_datas.JqGetValue('weekcheckbox','checkbox')
 					}else{
 					return '?'
 					}
 				},
 				post_step1 :function(){
-					p_data['minute']= post_minute()
-					p_data['hour']= post_hour()
-					p_data['month']= post_month()
-					p_data['day']= post_day()
-					if (post_week()!='?')
+					p_data['minute']= post_datas.post_minute()
+					p_data['hour']= post_datas.post_hour()
+					p_data['month']= post_datas.post_month()
+					p_data['day']= post_datas.post_day()
+					if (post_datas.post_week()!='?')
 					{
 						p_data['day'] = '?'
 					}
-					p_data['week']= post_week()
+					p_data['week']= post_datas.post_week()
 					return p_data
 				},
 				post_step2 :function(){},
-				post_step3 :function(){}
+				post_step3 :function(){},
+
+				obj2Str : function(obj){  
+					switch(typeof(obj)){  
+						case 'object':  
+							var ret = [];  
+							if (obj instanceof Array){  
+							for (var i = 0, len = obj.length; i < len; i++){  
+								ret.push(obj2Str(obj[i]));  
+							}  
+							return '[' + ret.join(',') + ']';  
+							}  
+							else if (obj instanceof RegExp){  
+							return obj.toString();  
+							}  
+							else{  
+							for (var a in obj){  
+								ret.push(a + ':' + post_datas.obj2Str(obj[a]));  
+							}  
+							return '{' + ret.join(',') + '}';  
+							}  
+						case 'function':  
+							return 'function() {}';  
+						case 'number':  
+							return obj.toString();  
+						case 'string':  
+							return "\"" + obj.replace(/(\\|\")/g, "\\$1").replace(/\n|\r|\t/g, function(a) {return ("\n"==a)?"\\n":("\r"==a)?"\\r":("\t"==a)?"\\t":"";}) + "\"";  
+						case 'boolean':  
+							return obj.toString();  
+						default:  
+							return obj.toString();  
+						}  
+				}  
 				
 		};
         //////////////////////////////////////////////////////////////////////////////////
@@ -199,8 +232,10 @@ function Current_size(stack){ //获得线性堆栈的当前大小
         var methods = {
 				getData: function() { 
 									var datavar = "";
-									switch(methods.getStep){
+									alert(3+methods.getStep());
+									switch(methods.getStep()){
 										case 0:
+											
 											datavar = post_datas.post_step1();
 											break;
 										case 1:
@@ -237,7 +272,7 @@ function Current_size(stack){ //获得线性堆栈的当前大小
                     var step = methods.getStep();
                     var l    = self.find('ul li').length;
                     if(step == l) step = step-1;
-					alert(stack[methods.getStep()]);
+					//alert(stack[methods.getStep()]);
 
 					  htmlobj=$.ajax({type: 'POST',url:stack[methods.getStep()-1],data:methods.getData(),async:false});
 					  $("#ajax_page").html(htmlobj.responseText);
@@ -259,9 +294,9 @@ function Current_size(stack){ //获得线性堆栈的当前大小
 						$("#next").attr("disabled","disabled");
 						return methods.getStep();
 					}else{
-					  alert(stack[methods.getStep()+1]);
-
-					  htmlobj=$.ajax({type: 'POST',url:stack[methods.getStep()+1],data: methods.getData(),async:false});
+					  //alert(stack[methods.getStep()+1]);
+					  //alert(post_datas.obj2Str(methods.getData()))
+					  htmlobj=$.ajax({type: 'POST',url:stack[methods.getStep()+1],data:{methods.getData()},async:false});
 					  $("#ajax_page").html(htmlobj.responseText);
                     return methods.setStep(methods.getStep() + 1);
 					}

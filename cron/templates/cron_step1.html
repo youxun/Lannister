@@ -190,10 +190,10 @@
         }
       }
     </style>
-	<!--
+	
 	<div style="display:none">
-		<input type="hidden" name="csrfmiddlewaretoken" value="$csrf_token"/>
-	</div> -->
+		<input type="hidden" name="csrfmiddlewaretoken" value="$csrf_token "/>
+	</div> 
       <div class="tabbable"> <!-- Only required for left/right tabs -->
 		<ul class="nav nav-tabs">
 			<li class="active"><a href="#tab1" data-toggle="tab">Minute</a></li>
@@ -205,307 +205,310 @@
 		<div class="tab-content">
 			<div class="tab-pane active" id="tab1">
 				<label class="radio" >
-					<input type="radio" name="optionsRadiosMinute" id="optionsRadiosMinute1" value="option1"  checked="checked" onclick="">
+					<input type="radio" name="optionsRadiosMinute" id="optionsRadiosMinute1" value="1"  checked="checked" onclick="">
 					<strong>Cycle:</strong>
 						<div>
-					      From <select class='inline'>
+					      From <select class='inline'  id='selectMinuteFrom'>
+									<option selected>0</option>
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
 									<option>4</option>
 									<option>5</option>
 								</select>
+							
 						   Minute,Start,Every
-						        <select class='inline'>
-									<option>1</option>
+						        <select class='inline' id='selectMinuteEvery'>
+									<option selected>1</option>
 									<option>2</option>
 									<option>3</option>
 									<option>4</option>
 									<option>5</option>
 								</select>
+					
 						   Minute Execute
 						 </div>
 				</label>
 				<label class="radio" >
-					<input type="radio" name="optionsRadiosMinute" id="optionsRadiosMinutue2" value="option2">
+					<input type="radio" name="optionsRadiosMinute" id="optionsRadiosMinutue2" value="2">
 				   <strong>Assign</strong>
 				   <hr>
 				   <div>
 					    <label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox60" value="option60"> 0&nbsp;&nbsp;
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox60" value="60"> 0&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox1" value="option1"> 1&nbsp;&nbsp;
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox1" value="1"> 1&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox2" value="option2"> 2&nbsp;&nbsp;
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox2" value="2"> 2&nbsp;&nbsp;
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3"> 3&nbsp;&nbsp;
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox3" value="3"> 3&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox4" value="option4"> 4&nbsp;&nbsp;
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox4" value="4"> 4&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox5" value="option5"> 5&nbsp;&nbsp;
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox5" value="5"> 5&nbsp;&nbsp;
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox6" value="option6"> 6&nbsp;&nbsp;
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox6" value="6"> 6&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox7" value="option7"> 7&nbsp;&nbsp;
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox7" value="7"> 7&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox8" value="option8"> 8&nbsp;&nbsp;
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox8" value="8"> 8&nbsp;&nbsp;
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox9" value="option9"> 9&nbsp;&nbsp;
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox9" value="9"> 9&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox10" value="option10"> 10
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox10" value="10"> 10
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox11" value="option11"> 11
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox11" value="11"> 11
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox12" value="option12"> 12
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox12" value="12"> 12
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox13" value="option13"> 13
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox13" value="13"> 13
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox14" value="option14"> 14
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox14" value="14"> 14
 						</label>
 					 </div>
 					 <div>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox15" value="option15"> 15
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox15" value="15"> 15
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox16" value="option16"> 16
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox16" value="16"> 16
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox17" value="option17"> 17
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox17" value="17"> 17
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox18" value="option18"> 18
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox18" value="18"> 18
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox19" value="option19"> 19
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox19" value="19"> 19
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox20" value="option20"> 20
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox20" value="20"> 20
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox21" value="option21"> 21
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox21" value="21"> 21
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox22" value="option22"> 22
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox22" value="22"> 22
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox23" value="option23"> 23
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox23" value="23"> 23
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox24" value="option24"> 24
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox24" value="24"> 24
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox25" value="option25"> 25
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox25" value="25"> 25
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox26" value="option26"> 26
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox26" value="26"> 26
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox27" value="option27"> 27
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox27" value="27"> 27
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox28" value="option28"> 28
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox28" value="28"> 28
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox29" value="option29"> 29
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox29" value="29"> 29
 						</label>
 					 </div>
 					 <div>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox30" value="option30"> 30
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox30" value="30"> 30
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox31" value="option31"> 31
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox31" value="31"> 31
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox32" value="option32"> 32
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox32" value="32"> 32
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox33" value="option33"> 33
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox33" value="33"> 33
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox34" value="option34"> 34
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox34" value="34"> 34
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox35" value="option35"> 35
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox35" value="35"> 35
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox36" value="option36"> 36
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox36" value="36"> 36
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox37" value="option37"> 37
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox37" value="37"> 37
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox38" value="option38"> 38
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox38" value="38"> 38
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox39" value="option39"> 39
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox39" value="39"> 39
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox40" value="option40"> 40
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox40" value="40"> 40
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox41" value="option41"> 41
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox41" value="41"> 41
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox42" value="option42"> 42
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox42" value="42"> 42
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox43" value="option43"> 43
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox43" value="43"> 43
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox44" value="option44"> 44
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox44" value="44"> 44
 						</label>
 					 </div>
 					 <div>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox45" value="option45"> 45
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox45" value="45"> 45
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox46" value="option46"> 46
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox46" value="46"> 46
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox47" value="option47"> 47
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox47" value="47"> 47
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox48" value="option48"> 48
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox48" value="48"> 48
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox49" value="option49"> 49
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox49" value="49"> 49
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox50" value="option50"> 50
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox50" value="50"> 50
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox51" value="option51"> 51
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox51" value="51"> 51
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox52" value="option52"> 52
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox52" value="52"> 52
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox53" value="option53"> 53
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox53" value="53"> 53
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox54" value="option54"> 54
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox54" value="54"> 54
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox55" value="option55"> 55
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox55" value="55"> 55
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox56" value="option56"> 56
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox56" value="56"> 56
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox57" value="option57"> 57
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox57" value="57"> 57
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox58" value="option58"> 58
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox58" value="58"> 58
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox59" value="option59"> 59
+							<input type="checkbox" name='minutecheckbox' id="inlineCheckbox59" value="59"> 59
 						</label>
 					 </div>
 				</label>
 			</div>
 			<div class="tab-pane" id="tab2">
 				<label class="radio">
-					<input type="radio" name="optionsRadiosHours" id="optionsRadiosHours1" value="option1" checked="checked">
+					<input type="radio" name="optionsRadiosHours" id="optionsRadiosHours1" value="1" checked="checked">
 					<h5>PerHour:</h5>
 				</label>
 				<label class="radio">
-					<input type="radio" name="optionsRadiosHours" id="optionsRadiosHours2" value="option2">
+					<input type="radio" name="optionsRadiosHours" id="optionsRadiosHours2" value="2">
 				   <h5>Assign:</h5><br>
 				     <hr>
 					 <div>
 						AM:
 					    <label class="checkbox inline">
-							;<input type="checkbox" id="inlineCheckbox60" value="option24"> 0&nbsp;&nbsp;
+							;<input type="checkbox" name='hourcheckbox' id="inlineCheckbox60" value="24"> 0&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox1" value="option1"> 1&nbsp;&nbsp;
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox1" value="1"> 1&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox2" value="option2"> 2&nbsp;&nbsp;
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox2" value="2"> 2&nbsp;&nbsp;
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3"> 3&nbsp;&nbsp;
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox3" value="3"> 3&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox4" value="option4"> 4&nbsp;&nbsp;
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox4" value="4"> 4&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox5" value="option5"> 5&nbsp;&nbsp;
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox5" value="5"> 5&nbsp;&nbsp;
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox6" value="option6"> 6&nbsp;&nbsp;
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox6" value="6"> 6&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox7" value="option7"> 7&nbsp;&nbsp;
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox7" value="7"> 7&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox8" value="option8"> 8&nbsp;&nbsp;
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox8" value="8"> 8&nbsp;&nbsp;
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox9" value="option9"> 9&nbsp;&nbsp;
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox9" value="9"> 9&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox10" value="option10"> 10
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox10" value="10"> 10
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox11" value="option11"> 11
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox11" value="11"> 11
 						</label>
 					 </div>
 					 <div>
 						PM:
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox12" value="option12"> 12
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox12" value="12"> 12
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox13" value="option13"> 13
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox13" value="13"> 13
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox14" value="option14"> 14
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox14" value="14"> 14
 						</label>
 	
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox15" value="option15"> 15
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox15" value="15"> 15
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox16" value="option16"> 16
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox16" value="16"> 16
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox17" value="option17"> 17
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox17" value="17"> 17
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox18" value="option18"> 18
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox18" value="18"> 18
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox19" value="option19"> 19
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox19" value="19"> 19
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox20" value="option20"> 20
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox20" value="20"> 20
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox21" value="option21"> 21
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox21" value="21"> 21
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox22" value="option22"> 22
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox22" value="22"> 22
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox23" value="option23"> 23
+							<input type="checkbox" name='hourcheckbox' id="inlineCheckbox23" value="23"> 23
 						</label>
 						
 					 </div>
@@ -513,168 +516,168 @@
 			</div>
 			<div class="tab-pane" id="tab3">
 				<label class="radio">
-					<input type="radio" name="optionsRadiosDay" id="optionsRadiosDay1" value="option1" checked="checked">
+					<input type="radio" name="optionsRadiosDay" id="optionsRadiosDay1" value="1" checked="checked">
 					<strong>PerDay:</strong>
 				</label>
 				<label class="radio">
-					<input type="radio" name="optionsRadiosDay" id="optionsRadiosDay2" value="option2">
+					<input type="radio" name="optionsRadiosDay" id="optionsRadiosDay2" value="2">
 				   <strong>Assign:</strong><br>
 				     <hr>
 					 <div>
 					   
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox1" value="option1"> 1&nbsp;&nbsp;
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox1" value="1"> 1&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox2" value="option2"> 2&nbsp;&nbsp;
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox2" value="2"> 2&nbsp;&nbsp;
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3"> 3&nbsp;&nbsp;
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox3" value="3"> 3&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox4" value="option4"> 4&nbsp;&nbsp;
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox4" value="4"> 4&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox5" value="option5"> 5&nbsp;&nbsp;
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox5" value="5"> 5&nbsp;&nbsp;
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox6" value="option6"> 6&nbsp;&nbsp;
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox6" value="6"> 6&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox7" value="option7"> 7&nbsp;&nbsp;
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox7" value="7"> 7&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox8" value="option8"> 8&nbsp;&nbsp;
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox8" value="8"> 8&nbsp;&nbsp;
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox9" value="option9"> 9&nbsp;&nbsp;
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox9" value="9"> 9&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox10" value="option10"> 10
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox10" value="10"> 10
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox11" value="option11"> 11
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox11" value="11"> 11
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox12" value="option12"> 12
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox12" value="12"> 12
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox13" value="option13"> 13
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox13" value="13"> 13
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox14" value="option14"> 14
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox14" value="14"> 14
 						</label>
 	
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox15" value="option15"> 15
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox15" value="15"> 15
 						</label>
 					 </div>
 					 <div>
 
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox16" value="option16"> 16
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox16" value="16"> 16
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox17" value="option17"> 17
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox17" value="17"> 17
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox18" value="option18"> 18
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox18" value="18"> 18
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox19" value="option19"> 19
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox19" value="19"> 19
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox20" value="option20"> 20
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox20" value="20"> 20
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox21" value="option21"> 21
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox21" value="21"> 21
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox22" value="option22"> 22
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox22" value="22"> 22
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox23" value="option23"> 23
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox23" value="23"> 23
 						</label>
 												<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox24" value="option24"> 24
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox24" value="24"> 24
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox25" value="option25"> 25
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox25" value="25"> 25
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox26" value="option26"> 26
-						</label>
-	
-						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox27" value="option27"> 27
-						</label>
-						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox28" value="option28"> 28
-						</label>
-						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox29" value="option29"> 29
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox26" value="26"> 26
 						</label>
 	
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox30" value="option30"> 30
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox27" value="27"> 27
+						</label>
+						<label class="checkbox inline">
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox28" value="28"> 28
+						</label>
+						<label class="checkbox inline">
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox29" value="29"> 29
+						</label>
+	
+						<label class="checkbox inline">
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox30" value="30"> 30
 						</label>
 					 </div>
 					 <div>
 					 <label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox31" value="option31"> 31
+							<input type="checkbox" name='daycheckbox' id="inlineCheckbox31" value="31"> 31
 						</label>
 					 </div>
 				</label>
 			</div>
 			<div class="tab-pane" id="tab4">
 				<label class="radio">
-					<input type="radio" name="optionsRadiosMonth" id="optionsRadiosMonth1" value="option1" checked="checked">
+					<input type="radio" name="optionsRadiosMonth" id="optionsRadiosMonth1" value="1" checked="checked">
 					<strong>PerMonth:</strong>
 				</label>
 				<label class="radio">
-					<input type="radio" name="optionsRadiosMonth" id="optionsRadiosMonth2" value="option2">
+					<input type="radio" name="optionsRadiosMonth" id="optionsRadiosMonth2" value="2">
 				   <strong>Assign:</strong><br>
 				     <hr>
 					 <div>
 
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox1" value="option1"> 1&nbsp;&nbsp;
+							<input type="checkbox" name='monthcheckbox' id="inlineCheckbox1" value="1"> 1&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox2" value="option2"> 2&nbsp;&nbsp;
+							<input type="checkbox" name='monthcheckbox' id="inlineCheckbox2" value="2"> 2&nbsp;&nbsp;
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3"> 3&nbsp;&nbsp;
+							<input type="checkbox" name='monthcheckbox' id="inlineCheckbox3" value="3"> 3&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox4" value="option4"> 4&nbsp;&nbsp;
+							<input type="checkbox" name='monthcheckbox' id="inlineCheckbox4" value="4"> 4&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox5" value="option5"> 5&nbsp;&nbsp;
+							<input type="checkbox" name='monthcheckbox' id="inlineCheckbox5" value="5"> 5&nbsp;&nbsp;
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox6" value="option6"> 6&nbsp;&nbsp;
+							<input type="checkbox" name='monthcheckbox' id="inlineCheckbox6" value="6"> 6&nbsp;&nbsp;
 						</label>
 						
 					 </div>
 					 <div>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox7" value="option7"> 7&nbsp;&nbsp;
+							<input type="checkbox" name='monthcheckbox' id="inlineCheckbox7" value="7"> 7&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox8" value="option8"> 8&nbsp;&nbsp;
+							<input type="checkbox" name='monthcheckbox' id="inlineCheckbox8" value="8"> 8&nbsp;&nbsp;
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox9" value="option9"> 9&nbsp;&nbsp;
+							<input type="checkbox" name='monthcheckbox' id="inlineCheckbox9" value="9"> 9&nbsp;&nbsp;
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox10" value="option10"> 10
+							<input type="checkbox" name='monthcheckbox' id="inlineCheckbox10" value="10"> 10
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox11" value="option11"> 11
+							<input type="checkbox" name='monthcheckbox' id="inlineCheckbox11" value="11"> 11
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox12" value="option12"> 12
+							<input type="checkbox" name='monthcheckbox' id="inlineCheckbox12" value="12"> 12
 						</label>
 						
 					 </div>
@@ -685,43 +688,43 @@
 				<div>
 					<div>
 						<label class="checkbox">
-							<input type="checkbox" checked="checked">
+							<input type="checkbox" name='weekcheckbox' checked="checked">
 							<strong>UseWeek</strong>
 						</label>
 					</div>
 					
 					<div>
                 <label class="radio">
-				<input type="radio" name="optionsRadiosWeek" id="optionsRadiosWeek1" value="option1" checked="checked">
+				<input type="radio" name="optionsRadiosWeek" id="optionsRadiosWeek1" value="1" checked="checked">
 					<strong>PerWeek:</strong>
 				</label>
 
 				<label class="radio">
-					<input type="radio" name="optionsRadiosWeek" id="optionsRadiosWeek2" value="option2">
+					<input type="radio" name="optionsRadiosWeek" id="optionsRadiosWeek2" value="2">
 				   <strong>Assign:</strong><br>
 				     <hr>
 					 <div>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox1" value="option1"> Sunday
+							<input type="checkbox" name='weekcheckbox' id="inlineCheckbox1" value="1"> Sunday
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox2" value="option2"> Monday
+							<input type="checkbox" name='weekcheckbox' id="inlineCheckbox2" value="2"> Monday
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3"> Tuesday
+							<input type="checkbox" name='weekcheckbox' id="inlineCheckbox3" value="3"> Tuesday
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox4" value="option4"> Wednesday
+							<input type="checkbox" name='weekcheckbox' id="inlineCheckbox4" value="4"> Wednesday
 						</label>
 						<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox5" value="option5"> Thursday
+							<input type="checkbox" name='weekcheckbox' id="inlineCheckbox5" value="5"> Thursday
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox6" value="option6"> Friday
+							<input type="checkbox" name='weekcheckbox' id="inlineCheckbox6" value="6"> Friday
 						</label>
 						</label>
 							<label class="checkbox inline">
-							<input type="checkbox" id="inlineCheckbox7" value="option7"> Salurday
+							<input type="checkbox" name='weekcheckbox' id="inlineCheckbox7" value="7"> Salurday
 						</label>
 					 </div>
 				</label>

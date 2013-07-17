@@ -18,6 +18,21 @@ indexView = IndexView.as_view()
 
 class CreateView(View):
     @csrf_exempt
+    def post(self,request,*args,**kwargs):
+        print kwargs
+        print args
+        print request
+        name = kwargs['step']
+        c = {}
+        c.update(csrf(request))
+        rc = RequestContext(request,c)
+        try:
+            return {'step1': lambda:  render_to_response('cron_step1.html',rc),
+             'step2': lambda:  render_to_response('cron_step2.html',rc),
+             'step3': lambda:  render_to_response('cron_step3.html',rc)}[name]()
+        except KeyError:
+            raise Http404
+    @csrf_exempt
     def get(self,request,*args,**kwargs):
         name = kwargs['step']
         c = {}
