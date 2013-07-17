@@ -29,7 +29,7 @@ var toggleMenu = {
 		//alert(lens.length);
 		for (var i = 0; i < arrMenus.length; i++) {
 			arrSubMenus = document.getElementById('hidden_ul');
-			alert(arrSubMenus.length);
+			//alert(arrSubMenus.length);
 			for (var j = 0; j < arrSubMenus.length; j++) {
 				oSubMenu = arrSubMenus[j];
 				oLink = oSubMenu.parentNode.getElementsByTagName('a')[0];
@@ -40,7 +40,7 @@ var toggleMenu = {
 	},
 	toggle : function(el, sHiddenClass) {
 		var oRegExp = new RegExp("(^|\\s)" + sHiddenClass + "(\\s|$)");
-		alert('test');
+		//alert('test');
 		el.className = (oRegExp.test(el.className)) ? el.className.replace(oRegExp, '') : el.className + ' ' + sHiddenClass; // Add or remove the class name that hides the element
 	},
 /* addEvent function from http://www.quirksmode.org/blog/archives/2005/10/_and_the_winner_1.html */

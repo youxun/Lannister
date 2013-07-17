@@ -83,7 +83,6 @@ function Current_size(stack){ //获得线性堆栈的当前大小
 // Demo methods
 
 */
-
 (function( $ ){
 
     $.fn.steps = function( options ) {  
@@ -94,7 +93,7 @@ function Current_size(stack){ //获得线性堆栈的当前大小
         //////////////////////////////////////////////////////////////////////////////////
         // DEFAULT VALUES
         var defaults = {};
-
+		var p_data={'minute':'','hour':'','day':'','month':'','week':''}
         //////////////////////////////////////////////////////////////////////////////////
         // PRIVATE FUNCTIONS
         var init = function( options ) {
@@ -128,9 +127,93 @@ function Current_size(stack){ //获得线性堆栈的当前大小
             return this.each(function() { self.removeData('steps'); })
         };
 
+		//////////////////////////////////////////////////////////////////////////////////
+		// POST Data FUNCTIONS
+		var post_datas = {
+				JqGetValue: function(controlID, controltype) {  
+					var objValue = "";  
+					switch (controltype) {  
+						case 'text': //文本输入框  
+							objValue = $.trim($("#" + controlID + "").attr("value")); //取值去左右空格  
+							break;  
+						case 'radio': //单选框  
+							objValue = $("input[name='" + controlID + "']:checked").attr("value");  
+							break;  
+						case 'select': //下拉列表  
+						//alert($("#selectMinuteFrom").val()+'selecttest')
+							objValue = $("#" + controlID + "").val();  
+							break;  
+						case 'checkbox': //多选框  
+							$("input[name='" + controlID + "']:checked").each(function () {  
+								objValue += $(this).val() + ",";  
+							});  
+							break;  
+						default:  
+							break;
+						}  
+					return objValue; 
+					},  
+				post_minute : function(){
+					if (JqGetValue('optionsRadiosMinute','radio')==1)
+					{
+						return JqGetValue('selectMinuteFrom','select')+'/'+JqGetValue('selectMinuteEvery','select');
+					}else{
+						return JqGetValue('minutecheckbox','checkbox');
+					}
+				},
+				post_hour : function(){
+					return (JqGetValue('optionsRadiosHours','radio')==1)?('*'):JqGetValue('hourcheckbox','checkbox')
+				},
+				post_month :	function(){
+					return (JqGetValue('optionsRadiosMonth','radio')==1)?('*'):JqGetValue('monthcheckbox','checkbox')
+				},	
+				post_day : function(){
+					return (JqGetValue('optionsRadiosDay','radio')==1)?('*'):JqGetValue('daycheckbox','checkbox')	
+				},
+				post_week : function(){
+					if (JqGetValue('weekcheckbox','checkbox'))
+					{
+					return (JqGetValue('optionsRadiosWeek','radio')==1)?('*'):JqGetValue('weekcheckbox','checkbox')
+					}else{
+					return '?'
+					}
+				},
+				post_step1 :function(){
+					p_data['minute']= post_minute()
+					p_data['hour']= post_hour()
+					p_data['month']= post_month()
+					p_data['day']= post_day()
+					if (post_week()!='?')
+					{
+						p_data['day'] = '?'
+					}
+					p_data['week']= post_week()
+					return p_data
+				},
+				post_step2 :function(){},
+				post_step3 :function(){}
+				
+		};
         //////////////////////////////////////////////////////////////////////////////////
         // PUBLIC FUNCTIONS
         var methods = {
+				getData: function() { 
+									var datavar = "";
+									switch(methods.getStep){
+										case 0:
+											datavar = post_datas.post_step1();
+											break;
+										case 1:
+											datavar = post_datas.post_step2();
+											break;
+										case 2:
+											datavar = post_datas.post_step3();
+											break;
+										default:
+											break;
+									}
+									return datavar;
+				},
                 getStep: function( ) { return self.data('steps')['step']; },
                 start:   function( ) { 
 					alert($("#prev").val());
@@ -156,12 +239,12 @@ function Current_size(stack){ //获得线性堆栈的当前大小
                     if(step == l) step = step-1;
 					alert(stack[methods.getStep()]);
 
-					  htmlobj=$.ajax({url:stack[methods.getStep()-1],async:false});
+					  htmlobj=$.ajax({type: 'POST',url:stack[methods.getStep()-1],data:methods.getData(),async:false});
 					  $("#ajax_page").html(htmlobj.responseText);
                     return methods.setStep(step - 1);
 					}
                 },
-                next:    function( ) {
+                next:    function() {
 					$("#prev").removeAttr("disabled");
 					/**
 					$.post(stack[methods.getStep()+1],function(data, status){
@@ -177,7 +260,8 @@ function Current_size(stack){ //获得线性堆栈的当前大小
 						return methods.getStep();
 					}else{
 					  alert(stack[methods.getStep()+1]);
-					  htmlobj=$.ajax({url:stack[methods.getStep()+1],async:false});
+
+					  htmlobj=$.ajax({type: 'POST',url:stack[methods.getStep()+1],data: methods.getData(),async:false});
 					  $("#ajax_page").html(htmlobj.responseText);
                     return methods.setStep(methods.getStep() + 1);
 					}
@@ -226,7 +310,7 @@ function Current_size(stack){ //获得线性堆栈的当前大小
     };
 })( jQuery );
 
-var stack={0:'cron_step1.html',1:'cron_step2.html',2:'cron_step3.html'}
+var stack={0:'step1/',1:'step2/',2:'step3/'}
 
 $(document).ready(function() {
     $('.steps').steps();
@@ -234,3 +318,26 @@ $(document).ready(function() {
 
 
 $(document).ready(function() { $('.steps').steps('start') });
+$.ajaxSetup({ 
+     beforeSend: function(xhr, settings) {
+         function getCookie(name) {
+             var cookieValue = null;
+             if (document.cookie && document.cookie != '') {
+                 var cookies = document.cookie.split(';');
+                 for (var i = 0; i < cookies.length; i++) {
+                     var cookie = jQuery.trim(cookies[i]);
+                     // Does this cookie string begin with the name we want?
+                 if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                     cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                     break;
+                 }
+             }
+         }
+         return cookieValue;
+         }
+         if (!(/^http:.*/.test(settings.url) || /^https:.*/.test(settings.url))) {
+             // Only send the token to relative URLs i.e. locally.
+             xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+         }
+     } 
+});

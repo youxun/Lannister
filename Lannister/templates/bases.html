@@ -2,6 +2,7 @@
 {% load static from staticfiles %}
 {% load url from future %}
 {% load i18n %}
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -52,6 +53,7 @@
       <hr>
       {%  include 'footer.html' %}
     </div><!--/.fluid-container-->
+
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -59,6 +61,17 @@
     <script src="{% static "js/bootstrap-transition.js" %}"></script>
     <script src="{% static "js/bootstrap-alert.js" %}"></script>
     <script src="{% static "js/bootstrap-modal.js" %}"></script>
-    <script src="{% static "js/bootstrap-dropdown.js" %}"></script>    
+    <script src="{% static "js/bootstrap-dropdown.js" %}"></script> 
+	<script src="{% static "js/bootstrap-tab.js" %}"></script> 
+	<script src="{% static "js/bootstrap-tooltip.js" %}"></script> 
+	<script src="{% static "js/bootstrap-transition.js" %}"></script> 
+	<script src="{% static "js/togglemenu.js" %}"></script> 
+    <script src="{% static "js/bootstrap-typehead.js" %}"></script> 
+	{% block scripts %}
+	{% endblock %}
+	{% block styles %}
+	{% endblock %}
+	{% block head%}
+	{% endblock %}
   </body>
 </html>

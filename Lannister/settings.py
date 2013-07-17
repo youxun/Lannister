@@ -127,6 +127,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -136,6 +137,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.static",
     "django.core.context_processors.tz",
     "django.core.context_processors.request",
+    "django.core.context_processors.csrf",
     "django.contrib.messages.context_processors.messages",
     "filemanager.utils.context_processors.loged_in",
 )
@@ -168,6 +170,8 @@ INSTALLED_APPS = (
     'userena',
     'guardian',
     'accounts',
+    'cron',
+    'filemanager',
 )
 LOGIN_REDIRECT_URL = '/accounts/%(username)s/'
 LOGIN_URL = '/accounts/signin/'
