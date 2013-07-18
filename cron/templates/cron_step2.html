@@ -15,51 +15,30 @@
 		</thead>
 		<tbody>
 			<tr class="success">
-				<td>*</td>
-				<td>*</td>
-				<td>*</td>
-				<td>*</td>
-				<td>*</td>
-				<td>*</td>
+				<td>0</td>
+				<td>{{ minute }}</td>
+				<td>{{ hour }}</td>
+				<td>{{ day }}</td>
+				<td>{{ month }}</td>
+				<td>{{ week }}</td>
 			</tr>
 		</tbody>
 	</table>
 	
 
-	<table class="table table-bordered">
+
+	<table class="table .table-bordered">
+				{% for item in times %}
+		{% if forloop.first %}
 		<tr class="success">
-			<td>start time:</td>
-			<td><strong>2001-10-12</strong></td>
+			<td><strong>first start time:</strong></td>
+			<td><strong> {{ item }}</strong></td>
 		</tr>
-	</table>
-
-	<table class=".table-bordered">
-
-				<tr>
-                  <td rowspan="8">Execute Time</td>
-                  <td><strong>2001-10-12</strong></td>
-                </tr>
-                <tr>
-                  <td><strong>2001-10-12</strong></td>
-                </tr>
-				<tr>
-                  <td><strong>2001-10-12</strong></td>
-                </tr>
-                <tr>
-                  <td><strong>2001-10-12</strong></td>
-                </tr>
-				<tr>
-                  <td><strong>2001-10-12</strong></td>
-                </tr>
-                <tr>
-                  <td><strong>2001-10-12</strong></td>
-                </tr>
-				<tr>
-                  <td><strong>2001-10-12</strong></td>
-                </tr>
-				<tr>
-                  <td><strong>2001-10-12</strong></td>
-                </tr>
-
+		{% endif %}
+		<tr class="success">
+			<td><strong>execute time{{ forloop.counter }}:</strong></td>
+			<td><strong>{{ item }}</strong></td>
+		</tr>
+				{% endfor %}
 	</table>
 

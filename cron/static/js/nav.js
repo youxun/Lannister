@@ -156,7 +156,7 @@ function Current_size(stack){ //获得线性堆栈的当前大小
 					},  
 				post_minute : function(){
 					if (post_datas.JqGetValue('optionsRadiosMinute','radio')==1)
-					{	
+					{	alert(post_datas.JqGetValue('selectMinuteFrom','select')+'/'+post_datas.JqGetValue('selectMinuteEvery','select'));
 						return post_datas.JqGetValue('selectMinuteFrom','select')+'/'+post_datas.JqGetValue('selectMinuteEvery','select');
 					}else{
 						return post_datas.JqGetValue('minutecheckbox','checkbox');
@@ -232,7 +232,7 @@ function Current_size(stack){ //获得线性堆栈的当前大小
         var methods = {
 				getData: function() { 
 									var datavar = "";
-									alert(3+methods.getStep());
+									//alert(3+methods.getStep());
 									switch(methods.getStep()){
 										case 0:
 											
@@ -296,7 +296,7 @@ function Current_size(stack){ //获得线性堆栈的当前大小
 					}else{
 					  //alert(stack[methods.getStep()+1]);
 					  //alert(post_datas.obj2Str(methods.getData()))
-					  htmlobj=$.ajax({type: 'POST',url:stack[methods.getStep()+1],data:{methods.getData()},async:false});
+					  htmlobj=$.ajax({type: 'POST',url:stack[methods.getStep()+1],data:methods.getData(),async:false});
 					  $("#ajax_page").html(htmlobj.responseText);
                     return methods.setStep(methods.getStep() + 1);
 					}

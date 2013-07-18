@@ -4,6 +4,7 @@ from django.conf import settings
 urlpatterns = patterns('cron.views',
          url('index/$','indexView',name = 'indexView'),
          url('index/(?P<step>\w+)/$','createView',name = 'createView'),
+         url('upload/$','uploadView',name = 'uploadView'),
          )
 
 
