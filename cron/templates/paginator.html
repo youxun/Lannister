@@ -1,0 +1,34 @@
+{% if is_paginated %}
+    <table id="noframe">
+        <tr>
+            <td>
+            {% if page_obj.has_previous %}
+                {% if search_type and query %}
+                    <a href="?search_type={{ search_type }}&query ={{ query }}&page={{ previous }}">&laquo;上一页</a>
+                {% else %}
+                    <a href="?page={{ page_obj.previous_page_number }}">&laquo;上一页</a>
+                {% endif %}
+            {% endif %}
+            {% if page_obj.has_next %}
+                {% if search_type and query %}
+                    <strong><a class='text-info' href="?search_type={{ search_type }}&query={{ query }}&page={{ next }}">&raquo;下一页</a></strong>
+
+                {% else %}
+                    <a href="?page={{ page_obj.next_page_number  }}">下一页 &raquo;</a>
+                {% endif %}
+            {% endif %}
+            </td>
+            <td><p class='text-info'>第{{ page_obj.number  }}页，共{{ paginator.num_pages }}页</p></td>
+            <form action='.' method='get'>
+                {% if search_type and query %}
+                    <input name="search_type" type="hidden" value={{ search_type }}>
+                    <input name="query" type="hidden" value={{ query }}>
+                {% endif %}
+                <td class='text-info'>&nbsp;&nbsp;到第</td>
+                <td ><input name="page" type="text" size="3"></td>
+                <td class='text-info'>页</td>
+                <td class='text-info'><input type="submit" value="跳转"/></td>
+            </form>
+        </tr>
+    </table>
+{% endif %}

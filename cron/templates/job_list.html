@@ -1,0 +1,41 @@
+{% extends 'bases.html'%}
+{% load staticfiles %}
+{% block header %}List of Job
+{% endblock %}
+
+{% block body %}
+
+<div class='contain'>
+{% if instances %}
+<table class='table table-hover'>
+  <caption><strong><h2>The Job List</h2></strong></caption>
+  <thead>
+    <tr>
+      <th>id</th>
+	  <th>name</th>
+      <th>content</th>
+	  <th>create date</th>
+	  <th>finish date</th>
+    </tr>
+  </thead>
+  <tbody>
+	{% for item in instances %}
+    <tr class='success'>
+	  <td>{{ item.id }}</td>
+      <td>{{ item.job_name }}</td>
+      <td>{{ item.content }}</td>
+	  <td>{{ item.create_date }}</td>
+	  <td>{{ item.finish_date }}</td>
+    </tr>
+	{% endfor%}
+  </tbody>
+</table>
+
+	{% include 'paginator.html' %}
+{% else %}
+	
+<p>There are no jobs! </p>
+
+{% endif %}
+</div>
+{% endblock %}
