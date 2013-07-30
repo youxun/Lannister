@@ -4,26 +4,23 @@ from django.conf import settings
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
-
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'site_proj.views.home', name='home'),
     # url(r'^site_proj/', include('site_proj.foo.urls')),
 
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
     url(r'^accounts/', include('userena.urls')),
-    url(r'^static/(?P<path>.*)$','django.views.static.serve',
-	{'document_root':settings.STATICFILES_DIRS, 'show_indexes': True}),
+)
+urlpatterns += patterns('',
+    url(r'^cron/',include('cron.urls')),
+)
+urlpatterns += patterns('',
+	url(r'^filemanager/',include('filemanager.urls')),
 )
 
 urlpatterns += patterns('',
-	url(r'^filemanager/',include('filemanager.urls')),
+	url(r'^chart/',include('chart.urls')),
+	
+	
 	)
-
-urlpatterns += patterns('',
-        url(r'^cron/',include('cron.urls')),
-        )

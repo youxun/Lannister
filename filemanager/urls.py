@@ -11,4 +11,11 @@ urlpatterns = patterns('filemanager.views',
     url(r'^upload/(?P<path>.*)', 'upload', name='fileserver_upload'),
     url(r'^edit/(?P<path>.*)', 'edit_directory', name='fileserver_edit_directory'),
     url(r'^zip/(?P<path>.*)', 'zip_directory', name='fileserver_zip'),
+
+	#url(r'upload/', 'uploadEx', name = 'fileserver_uploadEx' ),
+    #url( r'^$', generic.TemplateView.as_view( template_name = 'base.html' ) ),
 )
+
+urlpatterns += patterns('filemanager.restviews',
+	url(r'^rest/(?P<path>.*)','dir_list',name='dir_list'),
+	)

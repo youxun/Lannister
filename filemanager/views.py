@@ -13,13 +13,21 @@ from django.http import HttpResponse
 from django.core.exceptions import SuspiciousOperation
 from django.contrib import messages
 from django.views.defaults import page_not_found
+from django.shortcuts import render_to_response
+
+
+
+from django.core.urlresolvers import reverse
+from django.views.decorators.http import require_POST
+from http import upload_receive, UploadResponse, UploadBaseResponse
 
 from extra_views import FormSetView
 
-from .utils.filesystem import Directory, guess_type
-from .utils.views import LogedInMixin, SetPathMixin
+from .utils.filesystem import Directory,guess_type
+from .utils.views import LogedInMixin,SetPathMixin
 from .forms import (LoginForm, UploadForm, CreateSubdirectoryForm, TodoForm,
     UpdateDirectoryForm)
+
 
 
 class FrontpageView(LogedInMixin, TemplateView):
@@ -54,18 +62,15 @@ login = LoginView.as_view()
 class LogoutView(RedirectView):
     url = reverse_lazy('fileserver_frontpage')
     permanent = False
-
     def get(self, request, *args, **kwargs):
         request.session.flush()
         return super(LogoutView, self).get(request, *args, **kwargs)
-
-
 logout = LogoutView.as_view()
+
 
 
 class BrowseView(SetPathMixin, LogedInMixin, TemplateView):
     template_name = 'fileserver/browse.html'
-
     def get_context_data(self, **kwargs):
         context = super(BrowseView, self).get_context_data(**kwargs)
         path = self.get_path()
@@ -79,16 +84,14 @@ class BrowseView(SetPathMixin, LogedInMixin, TemplateView):
         self.request.session['sort'] = sort
         self.request.session['reverse'] = reverse
         context['directory'] = Directory(path, sort=sort, reverse=reverse)
-
         reverse = 'false' if reverse else 'true'
         context['name_url'] = "?sort=name"
         context['size_url'] = "?sort=size"
         key = {'name': 'name_url', 'size': 'size_url'}[sort]
         context[key] += "&reverse=%s" % reverse
         return context
-
-
 browse = BrowseView.as_view()
+
 
 
 class CreateSubdirectoryView(SetPathMixin, LogedInMixin, FormView):
@@ -103,11 +106,8 @@ class CreateSubdirectoryView(SetPathMixin, LogedInMixin, FormView):
             messages.error(self.request, _('Error in "%(newdir)s": %(error)s')
                                          % {'newdir': new_dir, 'error': e})
         return super(CreateSubdirectoryView, self).form_valid(form)
-
     def get_success_url(self):
         return reverse('fileserver_browse', args=[self.get_path()])
-
-
 mkdir = CreateSubdirectoryView.as_view()
 
 
@@ -123,8 +123,6 @@ class DownloadView(SetPathMixin, LogedInMixin, View):
         response['Content-Disposition'] = 'attachment'
         response['Content-Length'] = default_storage.size(path)
         return response
-
-
 download = DownloadView.as_view()
 
 
@@ -146,8 +144,6 @@ class ZipDirectoryView(SetPathMixin, LogedInMixin, View):
         response['Content-Disposition'] = 'attachment; filename=%s' % filename
         response['Content-Length'] = file_size
         return response
-
-
 zip_directory = ZipDirectoryView.as_view()
 
 
@@ -171,8 +167,9 @@ class UploadView(SetPathMixin, LogedInMixin, FormSetView):
                 default_storage.save(file_name, form.cleaned_data['file'])
         return super(UploadView, self).formset_valid(formset)
 
-
 upload = UploadView.as_view()
+
+
 
 
 class UpdateDirectoryView(SetPathMixin, LogedInMixin, FormSetView):
@@ -243,6 +240,8 @@ class TodoView(LogedInMixin, FormView):
         else:
             return {'todo': '', 'old_hash': hash('')}
 
-
 todo = TodoView.as_view()
+
+
+
 

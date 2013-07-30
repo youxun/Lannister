@@ -192,8 +192,17 @@ function Current_size(stack){ //获得线性堆栈的当前大小
 					return p_data
 				},
 				post_step2 :function(){},
-				post_step3 :function(){},
-
+				post_step3 :function(){
+					var job_data = {'name':'','command':''};
+					job_data['name'] = $('#title').val();
+					job_data['command'] = $('#CommandInput').val();
+					
+					alert(job_data['name']+':'+job_data['command']);
+					return job_data
+					},
+			    post_job : function(){
+					$.ajax({type: 'POST',url:stack[2],data:methods.getData(),async:false});
+					},
 				obj2Str : function(obj){  
 					switch(typeof(obj)){  
 						case 'object':  
@@ -222,11 +231,20 @@ function Current_size(stack){ //获得线性堆栈的当前大小
 						case 'boolean':  
 							return obj.toString();  
 						default:  
-							return obj.toString();  
-						}  
-				}  
+							return obj.toString();
+					}
+						  
+				} ,
+			 post_job: function(){
+				$.ajax({type: "POST",url:stack[2],data:methods.getData(),async:false});
+				}
 				
 		};
+
+		
+
+	
+
         //////////////////////////////////////////////////////////////////////////////////
         // PUBLIC FUNCTIONS
         var methods = {
@@ -291,8 +309,30 @@ function Current_size(stack){ //获得线性堆栈的当前大小
 					//alert(stack.size);
 					if ( methods.getStep() == 2)
 					{
+						alert("test");
 						$("#next").attr("disabled","disabled");
+						$('#myModal').modal()
+						/*
+						$("#alert_section").html(
+						'<script>'+	
+						'document.getElementById("a_click_commit").onclick = function () {'+
+	  'alert("commit_alert");'+
+		'$.ajax({type: "POST",url:stack[2],data:methods.getData(),async:false});'+
+		'};'+
+							'</script>'+
+						'<div  class="alert alert-block alert-error fade in">'+
+            '<button data-dismiss="alert" class="close" type="button">×</button>'+
+            '<h4 class="alert-heading">We will push the job into the queue?</h4>'+
+            '<p></p>'+
+            '<p>'+
+            '<a class="btn btn-danger" id="a_click_commit">Yes</a> <a href="#" class="btn">No</a>'+
+            '</p>'+
+			'</div>'	
+						);*/
 						return methods.getStep();
+					}else if( methods.getStep() == 3){
+						htmlobj=$.ajax({type: 'POST',url:stack[2],data:methods.getData(),async:false});
+						
 					}else{
 					  //alert(stack[methods.getStep()+1]);
 					  //alert(post_datas.obj2Str(methods.getData()))
@@ -376,3 +416,4 @@ $.ajaxSetup({
          }
      } 
 });
+

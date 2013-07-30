@@ -44,7 +44,6 @@ class LogedInMixin(object):
 
 
 class SetPathMixin(object):
-	
     def get(self, request, *args, **kwargs):
         path = self.get_path()
         if not default_storage.exists(path):
@@ -68,3 +67,5 @@ class SetPathMixin(object):
         context['full_path'] = path
         context['active_tab'] = resolve(self.request.path).url_name
         return context
+
+

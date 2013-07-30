@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{% static "css/layout.css" %}">
     <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
     <link href="{% static "css/bootstrap-responsive.css" %}" rel="stylesheet">
+	<link href="{% static "css/fileserver.css" %}" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -47,6 +48,10 @@
         </div><!--/span-->
         <div class="span9">
 		{% block body %}
+			{% block style %}
+			{% endblock %}
+			{% block script %}
+			{% endblock %}
 		{% endblock body %}
         </div><!--/span-->
       </div><!--/row-->
@@ -67,6 +72,8 @@
 	<script src="{% static "js/bootstrap-transition.js" %}"></script> 
 	<script src="{% static "js/togglemenu.js" %}"></script> 
     <script src="{% static "js/bootstrap-typehead.js" %}"></script> 
+	<script src="{% static "js/nav_right.js" %}"></script> 
+	<script type="text/javascript" src="{% static "js/fileserver.js" %}"></script>
 	{% block scripts %}
 	{% endblock %}
 	{% block styles %}

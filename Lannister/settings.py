@@ -98,6 +98,10 @@ STATICFILES_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     os.path.join(HERE, "static"),
+	HERE + '/../filemanager/static',
+	HERE + '/../cron/static',
+	HERE + '/../chart/static',
+	
 )
 
 # List of finder classes that know how to find static files in
@@ -107,6 +111,8 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
+
+HOST_URL = 'http://127.0.0.1:8001'
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '$1@1^=lgtsr9a0vxdjmpc*cy1bin3&a3a$0fk+-$!(bq5i)i^-'
@@ -125,6 +131,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+	'django.middleware.transaction.TransactionMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
     
@@ -153,7 +160,9 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-	HERE+'/../filemanager/templates',
+	HERE + '/../filemanager/templates',
+	HERE + '/../cron/templates',
+	HERE + '/../chart/templates',
 )
 
 INSTALLED_APPS = (
@@ -172,6 +181,7 @@ INSTALLED_APPS = (
     'accounts',
     'cron',
     'filemanager',
+	'rest_framework',
 )
 LOGIN_REDIRECT_URL = '/accounts/%(username)s/'
 LOGIN_URL = '/accounts/signin/'
@@ -223,4 +233,17 @@ LOGGING = {
       },
      },
     
+}
+
+REST_FRAMEWORK = {
+    # Use hyperlinked styles by default.
+    # Only used if the `serializer_class` attribute is not set on a view.
+    'DEFAULT_MODEL_SERIALIZER_CLASS':
+        'rest_framework.serializers.HyperlinkedModelSerializer',
+
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    #'DEFAULT_PERMISSION_CLASSES': [
+    #    'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    #]
 }

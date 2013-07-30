@@ -15,7 +15,7 @@
 			.menu ul a {background:#ced174;}
 			.hidden {display:none;}
 </style>
-<script type="text/javascript" >
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">
 var toggleMenu = {
 	init : function(sContainerClass, sHiddenClass) {
 		//sHiddenClass=Hidden
@@ -98,44 +98,37 @@ Add-ons by Robert Nyman, http://www.robertnyman.com
 toggleMenu.addEvent(window, 'load', function(){toggleMenu.init('memu','hidden');});
 
 
+
+
+
+
+
 </script>
 <div class="well sidebar-nav">
-            <ul class="nav nav-list">
+            <ul class="nav nav-list" id = "nav_list">
 			
 			
               <li class="nav-header">{% trans 'SubSytem'%}
 				
 			  </li>
               
-			 <li class="menu" >
-					<li class="active"><a href="#">VES</a>
-						<ul id='hidden_ul'>
-							<li><a href="/">Sub category 1a</a></li>
-							<li><a href="/">Sub category 1b</a></li>
-							<li><a href="/">Sub category 1c</a></li>
-							<li><a href="/">Sub category 1d</a></li>
-						</ul>
-					</li>
-					<li><a href="{% url 'fileserver_browse' 'VDS' %}">VDS</a>
-						<ul id='hidden_ul'>
-							<li><a href="/">Sub category 2a</a></li>
-							<li><a href="/">Sub category 2b</a></li>
-							<li><a href="/">Sub category 2c</a></li>
-							<li><a href="/">Sub category 2d</a></li>
-						</ul>
-					</li>
+
+			  <li id="link_li" class='active'><a href="{% url 'fileserver_browse' 'VES' %}">VES</a>
 			  </li>
-              <li><a href="{% url 'fileserver_browse' 'ICMS' %}">ICMS</a></li>
-              <li><a href="{% url 'fileserver_browse' 'VMS' %}">VMS</a></li>
-			  <li><a href="{% url 'fileserver_browse' 'ITIL' %}">ITIL</a></li>
-			  <li><a href="{% url 'fileserver_browse' 'UTCS' %}">UTCS</a></li>	
+			  <li id="link_li" ><a href="{% url 'fileserver_browse' 'VDS' %}">VDS</a>
+			  </li>
+
+              <li id="link_li"><a href="{% url 'fileserver_browse' 'ICMS' %}">ICMS</a></li>
+              <li id="link_li"><a href="{% url 'fileserver_browse' 'VMS' %}">VMS</a></li>
+			  <li id="link_li"><a href="{% url 'fileserver_browse' 'ITIL' %}">ITIL</a></li>
+			  <li id="link_li"><a href="{% url 'fileserver_browse' 'UTCS' %}">UTCS</a></li>	
               <li class="nav-header">{% trans 'CronSystem'%}</li>
-              <li><a href="#">Backup</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+              <li id="link_li"><a href="#">Backup</a></li>
               <li class="nav-header">{% trans 'Statistics'%}</li>
-              <li><a href="#">Disk</a></li>
-              <li><a href="#">Access</a></li>
-              <li><a href="#">Link</a></li>
+              <li id="link_li"><a href="#">Disk</a></li>
+              <li id="link_li"><a href="{% url 'indexView' %}">System</a></li>
+			  <li class="nav-header">{% trans 'Rest api'%}</li>
+			  <li id="link_li"><a href="{% url 'dir_list' '' %}">FileManager</a></li>
+			  <li id="link_li"><a href="{% url 'job_info_list' %}">JobSystem</a></li>
             </ul>
 </div><!--/.well -->

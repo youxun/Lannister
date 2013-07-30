@@ -1,0 +1,703 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# githubog: http://ogp.me/ns/fb/githubog#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>django-jfu/jfu/static/demo/bootstrap-responsive.min.css at master · Alem/django-jfu</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
+    <link rel="logo" type="image/svg" href="https://github-media-downloads.s3.amazonaws.com/github-logo.svg" />
+    <meta property="og:image" content="https://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png">
+    <meta name="hostname" content="fe17.rs.github.com">
+    <link rel="assets" href="https://github.global.ssl.fastly.net/">
+    <link rel="xhr-socket" href="/_sockets" />
+    
+    
+
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="selected-link" value="repo_source" data-pjax-transient />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="5007349" name="octolytics-actor-id" /><meta content="jerryxing98" name="octolytics-actor-login" /><meta content="c0ca79676ead78cc7b771c7a01ae57cd24bf64ae36d152750452441f3b858f42" name="octolytics-actor-hash" />
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="eLI8PoeFdWzN0X1FVRWvpPzcXcsFwglsC4DjsWLgwxk=" name="csrf-token" />
+
+    <link href="https://github.global.ssl.fastly.net/assets/github-aa31dccb9df8242dbd5abaea7591ae7f16cc4101.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://github.global.ssl.fastly.net/assets/github2-ec4f51bae74d4ad5725891dccaecd4cc727d8cdc.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+      <script src="https://github.global.ssl.fastly.net/assets/frameworks-e8054ad804a1cf9e9849130fee5a4a5487b663ed.js" type="text/javascript"></script>
+      <script src="https://github.global.ssl.fastly.net/assets/github-5aedc81091ebed048bfaed27f559182c9802355b.js" type="text/javascript"></script>
+      
+      <meta http-equiv="x-pjax-version" content="5ec9e4827e4e5ec3a8cfb080a5633b59">
+
+        <link data-pjax-transient rel='permalink' href='/Alem/django-jfu/blob/50e5e1409ad7dc25ab2c560182b4d922a2ffcd73/jfu/static/demo/bootstrap-responsive.min.css'>
+  <meta property="og:title" content="django-jfu"/>
+  <meta property="og:type" content="githubog:gitrepository"/>
+  <meta property="og:url" content="https://github.com/Alem/django-jfu"/>
+  <meta property="og:image" content="https://github.global.ssl.fastly.net/images/gravatars/gravatar-user-420.png"/>
+  <meta property="og:site_name" content="GitHub"/>
+  <meta property="og:description" content="django-jfu - A Django Library for jQuery File Upload"/>
+
+  <meta name="description" content="django-jfu - A Django Library for jQuery File Upload" />
+
+  <meta content="1356903" name="octolytics-dimension-user_id" /><meta content="Alem" name="octolytics-dimension-user_login" /><meta content="11326609" name="octolytics-dimension-repository_id" /><meta content="Alem/django-jfu" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="11326609" name="octolytics-dimension-repository_network_root_id" /><meta content="Alem/django-jfu" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/Alem/django-jfu/commits/master.atom" rel="alternate" title="Recent Commits to django-jfu:master" type="application/atom+xml" />
+
+  </head>
+
+
+  <body class="logged_in page-blob windows vis-public env-production ">
+
+    <div class="wrapper">
+      
+      
+      
+
+
+      <div class="header header-logged-in true">
+  <div class="container clearfix">
+
+    <a class="header-logo-invertocat" href="https://github.com/">
+  <span class="mega-octicon octicon-mark-github"></span>
+</a>
+
+    <div class="divider-vertical"></div>
+
+    
+  <a href="/notifications" class="notification-indicator tooltipped downwards" title="You have unread notifications">
+    <span class="mail-status unread"></span>
+  </a>
+  <div class="divider-vertical"></div>
+
+
+      <div class="command-bar js-command-bar  in-repository">
+          <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get">
+
+<input type="text" data-hotkey="/ s" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
+    
+    data-username="jerryxing98"
+      data-repo="Alem/django-jfu"
+      data-branch="master"
+      data-sha="a5201cd8e14e7dcf02a0050f3c0164616e60227f"
+  >
+
+    <input type="hidden" name="nwo" value="Alem/django-jfu" />
+
+    <div class="select-menu js-menu-container js-select-menu search-context-select-menu">
+      <span class="minibutton select-menu-button js-menu-target">
+        <span class="js-select-button">This repository</span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container">
+        <div class="select-menu-modal">
+
+          <div class="select-menu-item js-navigation-item js-this-repository-navigation-item selected">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" class="js-search-this-repository" name="search_target" value="repository" checked="checked" />
+            <div class="select-menu-item-text js-select-button-text">This repository</div>
+          </div> <!-- /.select-menu-item -->
+
+          <div class="select-menu-item js-navigation-item js-all-repositories-navigation-item">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" name="search_target" value="global" />
+            <div class="select-menu-item-text js-select-button-text">All repositories</div>
+          </div> <!-- /.select-menu-item -->
+
+        </div>
+      </div>
+    </div>
+
+  <span class="octicon help tooltipped downwards" title="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+        <ul class="top-nav">
+            <li class="explore"><a href="/explore">Explore</a></li>
+            <li><a href="https://gist.github.com">Gist</a></li>
+            <li><a href="/blog">Blog</a></li>
+          <li><a href="https://help.github.com">Help</a></li>
+        </ul>
+      </div>
+
+    
+
+  
+
+    <ul id="user-links">
+      <li>
+        <a href="/jerryxing98" class="name">
+          <img height="20" src="https://secure.gravatar.com/avatar/5e78ee37f34e6cddd9a87d8ab7be63d2?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="20" /> jerryxing98
+        </a>
+      </li>
+
+        <li>
+          <a href="/new" id="new_repo" class="tooltipped downwards" title="Create a new repo">
+            <span class="octicon octicon-repo-create"></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/settings/profile" id="account_settings"
+            class="tooltipped downwards"
+            title="Account settings (You have no verified emails)">
+            <span class="octicon octicon-tools"></span>
+          </a>
+            <span class="settings-warning">!</span>
+        </li>
+        <li>
+          <a class="tooltipped downwards" href="/logout" data-method="post" id="logout" title="Sign out">
+            <span class="octicon octicon-log-out"></span>
+          </a>
+        </li>
+
+    </ul>
+
+
+<div class="js-new-dropdown-contents hidden">
+  
+
+<ul class="dropdown-menu">
+  <li>
+    <a href="/new"><span class="octicon octicon-repo-create"></span> New repository</a>
+  </li>
+  <li>
+    <a href="/organizations/new"><span class="octicon octicon-organization"></span> New organization</a>
+  </li>
+
+
+
+    <li class="section-title">
+      <span title="Alem/django-jfu">This repository</span>
+    </li>
+    <li>
+      <a href="/Alem/django-jfu/issues/new"><span class="octicon octicon-issue-opened"></span> New issue</a>
+    </li>
+</ul>
+
+</div>
+
+
+    
+  </div>
+</div>
+
+      
+
+      
+
+<div class="flash-global flash-warn">
+<div class="container">
+
+    <h2>
+      You don't have any verified emails.  We recommend <a href="https://github.com/settings/emails">verifying</a> at least one email.
+    </h2>
+    <p>
+      Email verification helps our support team help you in case you have any email issues or lose your password.
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+
+<ul class="pagehead-actions">
+
+    <li class="subscription">
+      <form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="eLI8PoeFdWzN0X1FVRWvpPzcXcsFwglsC4DjsWLgwxk=" /></div>  <input id="repository_id" name="repository_id" type="hidden" value="11326609" />
+
+    <div class="select-menu js-menu-container js-select-menu">
+        <a class="social-count js-social-count" href="/Alem/django-jfu/watchers">
+          1
+        </a>
+      <span class="minibutton select-menu-button with-count js-menu-target">
+        <span class="js-select-button">
+          <span class="octicon octicon-eye-watch"></span>
+          Watch
+        </span>
+      </span>
+
+      <div class="select-menu-modal-holder">
+        <div class="select-menu-modal subscription-menu-modal js-menu-content">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notification status</span>
+            <span class="octicon octicon-remove-close js-menu-close"></span>
+          </div> <!-- /.select-menu-header -->
+
+          <div class="select-menu-list js-navigation-container">
+
+            <div class="select-menu-item js-navigation-item selected">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input checked="checked" id="do_included" name="do" type="radio" value="included" />
+                <h4>Not watching</h4>
+                <span class="description">You only receive notifications for discussions in which you participate or are @mentioned.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-eye-watch"></span>
+                  Watch
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input id="do_subscribed" name="do" type="radio" value="subscribed" />
+                <h4>Watching</h4>
+                <span class="description">You receive notifications for all discussions in this repository.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-eye-unwatch"></span>
+                  Unwatch
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">
+                <input id="do_ignore" name="do" type="radio" value="ignore" />
+                <h4>Ignoring</h4>
+                <span class="description">You do not receive any notifications for discussions in this repository.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="octicon octicon-mute"></span>
+                  Stop ignoring
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+          </div> <!-- /.select-menu-list -->
+
+        </div> <!-- /.select-menu-modal -->
+      </div> <!-- /.select-menu-modal-holder -->
+    </div> <!-- /.select-menu -->
+
+</form>
+    </li>
+
+  <li>
+  
+<div class="js-toggler-container js-social-container starring-container ">
+  <a href="/Alem/django-jfu/unstar" class="minibutton with-count js-toggler-target star-button starred upwards" title="Unstar this repo" data-remote="true" data-method="post" rel="nofollow">
+    <span class="octicon octicon-star-delete"></span><span class="text">Unstar</span>
+  </a>
+  <a href="/Alem/django-jfu/star" class="minibutton with-count js-toggler-target star-button unstarred upwards " title="Star this repo" data-remote="true" data-method="post" rel="nofollow">
+    <span class="octicon octicon-star"></span><span class="text">Star</span>
+  </a>
+  <a class="social-count js-social-count" href="/Alem/django-jfu/stargazers">13</a>
+</div>
+
+  </li>
+
+
+        <li>
+          <a href="/Alem/django-jfu/fork" class="minibutton with-count js-toggler-target fork-button lighter upwards" title="Fork this repo" rel="nofollow" data-method="post">
+            <span class="octicon octicon-git-branch-create"></span><span class="text">Fork</span>
+          </a>
+          <a href="/Alem/django-jfu/network" class="social-count">1</a>
+        </li>
+
+
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="repo-label"><span>public</span></span>
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author">
+            <a href="/Alem" class="url fn" itemprop="url" rel="author"><span itemprop="title">Alem</span></a></span
+          ><span class="repohead-name-divider">/</span><strong
+          ><a href="/Alem/django-jfu" class="js-current-repository js-repo-home-link">django-jfu</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="Octocat-spinner-32" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+
+      <div class="repository-with-sidebar repo-container ">
+
+        <div class="repository-sidebar">
+            
+
+<div class="repo-nav repo-nav-full js-repository-container-pjax js-octicon-loaders">
+  <div class="repo-nav-contents">
+    <ul class="repo-menu">
+      <li class="tooltipped leftwards" title="Code">
+        <a href="/Alem/django-jfu" aria-label="Code" class="js-selected-navigation-item selected" data-gotokey="c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_tags repo_branches /Alem/django-jfu">
+          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+        <li class="tooltipped leftwards" title="Issues">
+          <a href="/Alem/django-jfu/issues" aria-label="Issues" class="js-selected-navigation-item js-disable-pjax" data-gotokey="i" data-selected-links="repo_issues /Alem/django-jfu/issues">
+            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+            <span class='counter'>0</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+      <li class="tooltipped leftwards" title="Pull Requests"><a href="/Alem/django-jfu/pulls" aria-label="Pull Requests" class="js-selected-navigation-item js-disable-pjax" data-gotokey="p" data-selected-links="repo_pulls /Alem/django-jfu/pulls">
+            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+            <span class='counter'>0</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+
+        <li class="tooltipped leftwards" title="Wiki">
+          <a href="/Alem/django-jfu/wiki" aria-label="Wiki" class="js-selected-navigation-item " data-pjax="true" data-selected-links="repo_wiki /Alem/django-jfu/wiki">
+            <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+
+    </ul>
+    <div class="repo-menu-separator"></div>
+    <ul class="repo-menu">
+
+      <li class="tooltipped leftwards" title="Pulse">
+        <a href="/Alem/django-jfu/pulse" aria-label="Pulse" class="js-selected-navigation-item " data-pjax="true" data-selected-links="pulse /Alem/django-jfu/pulse">
+          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped leftwards" title="Graphs">
+        <a href="/Alem/django-jfu/graphs" aria-label="Graphs" class="js-selected-navigation-item " data-pjax="true" data-selected-links="repo_graphs repo_contributors /Alem/django-jfu/graphs">
+          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped leftwards" title="Network">
+        <a href="/Alem/django-jfu/network" aria-label="Network" class="js-selected-navigation-item js-disable-pjax" data-selected-links="repo_network /Alem/django-jfu/network">
+          <span class="octicon octicon-git-branch"></span> <span class="full-word">Network</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    </ul>
+
+  </div>
+</div>
+
+            <div class="only-with-full-nav">
+              
+
+  
+
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+
+  <input type="text" class="clone js-url-field"
+         value="https://github.com/Alem/django-jfu.git" readonly="readonly">
+
+  <span class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/Alem/django-jfu.git" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
+</div>
+
+  
+
+<div class="clone-url "
+  data-protocol-type="ssh"
+  data-url="/users/set_protocol?protocol_selector=ssh&amp;protocol_type=clone">
+  <h3><strong>SSH</strong> clone URL</h3>
+
+  <input type="text" class="clone js-url-field"
+         value="git@github.com:Alem/django-jfu.git" readonly="readonly">
+
+  <span class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="git@github.com:Alem/django-jfu.git" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
+</div>
+
+  
+
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><strong>Subversion</strong> checkout URL</h3>
+
+  <input type="text" class="clone js-url-field"
+         value="https://github.com/Alem/django-jfu" readonly="readonly">
+
+  <span class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/Alem/django-jfu" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
+</div>
+
+
+
+<p class="clone-options">You can clone with
+    <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>,
+    <a href="#" class="js-clone-selector" data-protocol="ssh">SSH</a>,
+    <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>,
+  and <a href="https://help.github.com/articles/which-remote-url-should-i-use">other methods.</a>
+</p>
+
+
+  <a href="http://windows.github.com" class="minibutton sidebar-button">
+    <span class="octicon octicon-device-desktop"></span>
+    Clone in Desktop
+  </a>
+
+                <a href="/Alem/django-jfu/archive/master.zip"
+                   class="minibutton sidebar-button"
+                   title="Download this repository as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+            </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+
+<!-- blob contrib key: blob_contributors:v21:4fb8e314f7e9b13af12a3164497ca928 -->
+<!-- blob contrib frag key: views10/v8/blob_contributors:v21:4fb8e314f7e9b13af12a3164497ca928 -->
+
+<p title="This is a placeholder element" class="js-history-link-replace hidden"></p>
+
+<a href="/Alem/django-jfu/find/master" data-pjax data-hotkey="t" style="display:none">Show File Finder</a>
+
+<div class="file-navigation">
+  
+
+
+<div class="select-menu js-menu-container js-select-menu" >
+  <span class="minibutton select-menu-button js-menu-target" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-remove-close js-menu-close"></span>
+      </div> <!-- /.select-menu-header -->
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div><!-- /.select-menu-tabs -->
+      </div><!-- /.select-menu-filters -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item selected">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/Alem/django-jfu/blob/master/jfu/static/demo/bootstrap-responsive.min.css" class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target" data-name="master" data-skip-pjax="true" rel="nofollow" title="master">master</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+    </div> <!-- /.select-menu-modal -->
+  </div> <!-- /.select-menu-modal-holder -->
+</div> <!-- /.select-menu -->
+
+  <div class="breadcrumb">
+    <span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/Alem/django-jfu" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">django-jfu</span></a></span></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/Alem/django-jfu/tree/master/jfu" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">jfu</span></a></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/Alem/django-jfu/tree/master/jfu/static" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">static</span></a></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/Alem/django-jfu/tree/master/jfu/static/demo" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">demo</span></a></span><span class="separator"> / </span><strong class="final-path">bootstrap-responsive.min.css</strong> <span class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="jfu/static/demo/bootstrap-responsive.min.css" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+
+  <div class="commit commit-loader file-history-tease js-deferred-content" data-url="/Alem/django-jfu/contributors/master/jfu/static/demo/bootstrap-responsive.min.css">
+    Fetching contributors…
+
+    <div class="participation">
+      <p class="loader-loading"><img alt="Octocat-spinner-32-eaf2f5" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" /></p>
+      <p class="loader-error">Cannot retrieve contributors at this time</p>
+    </div>
+  </div>
+
+<div id="files" class="bubble">
+  <div class="file">
+    <div class="meta">
+      <div class="info">
+        <span class="icon"><b class="octicon octicon-file-text"></b></span>
+        <span class="mode" title="File Mode">file</span>
+          <span>9 lines (9 sloc)</span>
+        <span>16.848 kb</span>
+      </div>
+      <div class="actions">
+        <div class="button-group">
+                <a class="minibutton tooltipped leftwards"
+                   title="Clicking this button will automatically fork this project so you can edit the file"
+                   href="/Alem/django-jfu/edit/master/jfu/static/demo/bootstrap-responsive.min.css"
+                   data-method="post" rel="nofollow">Edit</a>
+          <a href="/Alem/django-jfu/raw/master/jfu/static/demo/bootstrap-responsive.min.css" class="button minibutton " id="raw-url">Raw</a>
+            <a href="/Alem/django-jfu/blame/master/jfu/static/demo/bootstrap-responsive.min.css" class="button minibutton ">Blame</a>
+          <a href="/Alem/django-jfu/commits/master/jfu/static/demo/bootstrap-responsive.min.css" class="button minibutton " rel="nofollow">History</a>
+        </div><!-- /.button-group -->
+            <a class="minibutton danger empty-icon tooltipped downwards"
+               href="/Alem/django-jfu/delete/master/jfu/static/demo/bootstrap-responsive.min.css"
+               title="Fork this project and delete file" data-method="post" rel="nofollow">
+            Delete
+          </a>
+      </div><!-- /.actions -->
+
+    </div>
+        <div class="blob-wrapper data type-css js-blob-data">
+      <table class="file-code file-diff">
+        <tr class="file-code-line">
+          <td class="blob-line-nums">
+            <span id="L1" rel="#L1">1</span>
+<span id="L2" rel="#L2">2</span>
+<span id="L3" rel="#L3">3</span>
+<span id="L4" rel="#L4">4</span>
+<span id="L5" rel="#L5">5</span>
+<span id="L6" rel="#L6">6</span>
+<span id="L7" rel="#L7">7</span>
+<span id="L8" rel="#L8">8</span>
+<span id="L9" rel="#L9">9</span>
+
+          </td>
+          <td class="blob-line-code">
+                  <div class="highlight"><pre><div class='line' id='LC1'><span class="c">/*!</span></div><div class='line' id='LC2'><span class="c"> * Bootstrap Responsive v2.3.2</span></div><div class='line' id='LC3'><span class="c"> *</span></div><div class='line' id='LC4'><span class="c"> * Copyright 2012 Twitter, Inc</span></div><div class='line' id='LC5'><span class="c"> * Licensed under the Apache License v2.0</span></div><div class='line' id='LC6'><span class="c"> * http://www.apache.org/licenses/LICENSE-2.0</span></div><div class='line' id='LC7'><span class="c"> *</span></div><div class='line' id='LC8'><span class="c"> * Designed and built with all the love in the world @twitter by @mdo and @fat.</span></div><div class='line' id='LC9'><span class="c"> */</span><span class="nc">.clearfix</span><span class="p">{</span><span class="o">*</span><span class="n">zoom</span><span class="o">:</span><span class="m">1</span><span class="p">}</span><span class="nc">.clearfix</span><span class="nd">:before</span><span class="o">,</span><span class="nc">.clearfix</span><span class="nd">:after</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="n">table</span><span class="p">;</span><span class="k">line-height</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="k">content</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">}</span><span class="nc">.clearfix</span><span class="nd">:after</span><span class="p">{</span><span class="k">clear</span><span class="o">:</span><span class="k">both</span><span class="p">}</span><span class="nc">.hide-text</span><span class="p">{</span><span class="k">font</span><span class="o">:</span><span class="m">0</span><span class="o">/</span><span class="m">0</span> <span class="n">a</span><span class="p">;</span><span class="k">color</span><span class="o">:</span><span class="k">transparent</span><span class="p">;</span><span class="k">text-shadow</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="k">background-color</span><span class="o">:</span><span class="k">transparent</span><span class="p">;</span><span class="k">border</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.input-block-level</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span><span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span><span class="k">min-height</span><span class="o">:</span><span class="m">30px</span><span class="p">;</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span><span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">}</span><span class="k">@-ms-viewport</span><span class="p">{</span><span class="nt">width</span><span class="nd">:device-width</span><span class="p">}</span><span class="nc">.hidden</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="k">visibility</span><span class="o">:</span><span class="k">hidden</span><span class="p">}</span><span class="nc">.visible-phone</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="cp">!important</span><span class="p">}</span><span class="nc">.visible-tablet</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="cp">!important</span><span class="p">}</span><span class="nc">.hidden-desktop</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="cp">!important</span><span class="p">}</span><span class="nc">.visible-desktop</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">inherit</span><span class="cp">!important</span><span class="p">}</span><span class="k">@media</span><span class="o">(</span><span class="nt">min-width</span><span class="nd">:768px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:979px</span><span class="o">)</span><span class="p">{</span><span class="nc">.hidden-desktop</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">inherit</span><span class="cp">!important</span><span class="p">}</span><span class="nc">.visible-desktop</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="cp">!important</span><span class="p">}</span><span class="nc">.visible-tablet</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">inherit</span><span class="cp">!important</span><span class="p">}</span><span class="nc">.hidden-tablet</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="cp">!important</span><span class="p">}}</span><span class="k">@media</span><span class="o">(</span><span class="nt">max-width</span><span class="nd">:767px</span><span class="o">)</span><span class="p">{</span><span class="nc">.hidden-desktop</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">inherit</span><span class="cp">!important</span><span class="p">}</span><span class="nc">.visible-desktop</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="cp">!important</span><span class="p">}</span><span class="nc">.visible-phone</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">inherit</span><span class="cp">!important</span><span class="p">}</span><span class="nc">.hidden-phone</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="cp">!important</span><span class="p">}}</span><span class="nc">.visible-print</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="cp">!important</span><span class="p">}</span><span class="k">@media</span> <span class="nt">print</span><span class="p">{</span><span class="nc">.visible-print</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">inherit</span><span class="cp">!important</span><span class="p">}</span><span class="nc">.hidden-print</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="cp">!important</span><span class="p">}}</span><span class="k">@media</span><span class="o">(</span><span class="nt">min-width</span><span class="nd">:1200px</span><span class="o">)</span><span class="p">{</span><span class="nc">.row</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:-</span><span class="m">30px</span><span class="p">;</span><span class="o">*</span><span class="n">zoom</span><span class="o">:</span><span class="m">1</span><span class="p">}</span><span class="nc">.row</span><span class="nd">:before</span><span class="o">,</span><span class="nc">.row</span><span class="nd">:after</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="n">table</span><span class="p">;</span><span class="k">line-height</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="k">content</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">}</span><span class="nc">.row</span><span class="nd">:after</span><span class="p">{</span><span class="k">clear</span><span class="o">:</span><span class="k">both</span><span class="p">}</span><span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]</span><span class="p">{</span><span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span><span class="k">min-height</span><span class="o">:</span><span class="m">1px</span><span class="p">;</span><span class="k">margin-left</span><span class="o">:</span><span class="m">30px</span><span class="p">}</span><span class="nc">.container</span><span class="o">,</span><span class="nc">.navbar-static-top</span> <span class="nc">.container</span><span class="o">,</span><span class="nc">.navbar-fixed-top</span> <span class="nc">.container</span><span class="o">,</span><span class="nc">.navbar-fixed-bottom</span> <span class="nc">.container</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">1170px</span><span class="p">}</span><span class="nc">.span12</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">1170px</span><span class="p">}</span><span class="nc">.span11</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">1070px</span><span class="p">}</span><span class="nc">.span10</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">970px</span><span class="p">}</span><span class="nc">.span9</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">870px</span><span class="p">}</span><span class="nc">.span8</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">770px</span><span class="p">}</span><span class="nc">.span7</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">670px</span><span class="p">}</span><span class="nc">.span6</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">570px</span><span class="p">}</span><span class="nc">.span5</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">470px</span><span class="p">}</span><span class="nc">.span4</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">370px</span><span class="p">}</span><span class="nc">.span3</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">270px</span><span class="p">}</span><span class="nc">.span2</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">170px</span><span class="p">}</span><span class="nc">.span1</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">70px</span><span class="p">}</span><span class="nc">.offset12</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">1230px</span><span class="p">}</span><span class="nc">.offset11</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">1130px</span><span class="p">}</span><span class="nc">.offset10</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">1030px</span><span class="p">}</span><span class="nc">.offset9</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">930px</span><span class="p">}</span><span class="nc">.offset8</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">830px</span><span class="p">}</span><span class="nc">.offset7</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">730px</span><span class="p">}</span><span class="nc">.offset6</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">630px</span><span class="p">}</span><span class="nc">.offset5</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">530px</span><span class="p">}</span><span class="nc">.offset4</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">430px</span><span class="p">}</span><span class="nc">.offset3</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">330px</span><span class="p">}</span><span class="nc">.offset2</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">230px</span><span class="p">}</span><span class="nc">.offset1</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">130px</span><span class="p">}</span><span class="nc">.row-fluid</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="n">zoom</span><span class="o">:</span><span class="m">1</span><span class="p">}</span><span class="nc">.row-fluid</span><span class="nd">:before</span><span class="o">,</span><span class="nc">.row-fluid</span><span class="nd">:after</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="n">table</span><span class="p">;</span><span class="k">line-height</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="k">content</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">}</span><span class="nc">.row-fluid</span><span class="nd">:after</span><span class="p">{</span><span class="k">clear</span><span class="o">:</span><span class="k">both</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span><span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span><span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span><span class="k">min-height</span><span class="o">:</span><span class="m">30px</span><span class="p">;</span><span class="k">margin-left</span><span class="o">:</span><span class="m">2</span><span class="o">.</span><span class="m">564102564102564</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">2</span><span class="o">.</span><span class="m">5109110747408616</span><span class="o">%</span><span class="p">;</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span><span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.controls-row</span> <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]+[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">2</span><span class="o">.</span><span class="m">564102564102564</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span12</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">99</span><span class="o">.</span><span class="m">94680851063829</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span11</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">91</span><span class="o">.</span><span class="m">45299145299145</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">91</span><span class="o">.</span><span class="m">39979996362975</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span10</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">82</span><span class="o">.</span><span class="m">90598290598291</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">82</span><span class="o">.</span><span class="m">8527914166212</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span9</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">74</span><span class="o">.</span><span class="m">35897435897436</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">74</span><span class="o">.</span><span class="m">30578286961266</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span8</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">65</span><span class="o">.</span><span class="m">81196581196582</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">65</span><span class="o">.</span><span class="m">75877432260411</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span7</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">57</span><span class="o">.</span><span class="m">26495726495726</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">57</span><span class="o">.</span><span class="m">21176577559556</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span6</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">48</span><span class="o">.</span><span class="m">717948717948715</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">48</span><span class="o">.</span><span class="m">664757228587014</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span5</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">40</span><span class="o">.</span><span class="m">17094017094017</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">40</span><span class="o">.</span><span class="m">11774868157847</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span4</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">31</span><span class="o">.</span><span class="m">623931623931625</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">31</span><span class="o">.</span><span class="m">570740134569924</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span3</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">23</span><span class="o">.</span><span class="m">076923076923077</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">23</span><span class="o">.</span><span class="m">023731587561375</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span2</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">14</span><span class="o">.</span><span class="m">52991452991453</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">14</span><span class="o">.</span><span class="m">476723040552828</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span1</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">5</span><span class="o">.</span><span class="m">982905982905983</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">5</span><span class="o">.</span><span class="m">929714493544281</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset12</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">105</span><span class="o">.</span><span class="m">12820512820512</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">105</span><span class="o">.</span><span class="m">02182214948171</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset12</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">102</span><span class="o">.</span><span class="m">56410256410257</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">102</span><span class="o">.</span><span class="m">45771958537915</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset11</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">96</span><span class="o">.</span><span class="m">58119658119658</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">96</span><span class="o">.</span><span class="m">47481360247316</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset11</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">94</span><span class="o">.</span><span class="m">01709401709402</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">93</span><span class="o">.</span><span class="m">91071103837061</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset10</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">88</span><span class="o">.</span><span class="m">03418803418803</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">87</span><span class="o">.</span><span class="m">92780505546462</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset10</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">85</span><span class="o">.</span><span class="m">47008547008548</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">85</span><span class="o">.</span><span class="m">36370249136206</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset9</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">79</span><span class="o">.</span><span class="m">48717948717949</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">79</span><span class="o">.</span><span class="m">38079650845607</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset9</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">76</span><span class="o">.</span><span class="m">92307692307693</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">76</span><span class="o">.</span><span class="m">81669394435352</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset8</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">70</span><span class="o">.</span><span class="m">94017094017094</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">70</span><span class="o">.</span><span class="m">83378796144753</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset8</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">68</span><span class="o">.</span><span class="m">37606837606839</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">68</span><span class="o">.</span><span class="m">26968539734497</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset7</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">62</span><span class="o">.</span><span class="m">393162393162385</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">62</span><span class="o">.</span><span class="m">28677941443899</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset7</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">59</span><span class="o">.</span><span class="m">82905982905982</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">59</span><span class="o">.</span><span class="m">72267685033642</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset6</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">53</span><span class="o">.</span><span class="m">84615384615384</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">53</span><span class="o">.</span><span class="m">739770867430444</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset6</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">51</span><span class="o">.</span><span class="m">28205128205128</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">51</span><span class="o">.</span><span class="m">175668303327875</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset5</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">45</span><span class="o">.</span><span class="m">299145299145295</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">45</span><span class="o">.</span><span class="m">1927623204219</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset5</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">42</span><span class="o">.</span><span class="m">73504273504273</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">42</span><span class="o">.</span><span class="m">62865975631933</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset4</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">36</span><span class="o">.</span><span class="m">75213675213675</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">36</span><span class="o">.</span><span class="m">645753773413354</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset4</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">34</span><span class="o">.</span><span class="m">18803418803419</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">34</span><span class="o">.</span><span class="m">081651209310785</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset3</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">28</span><span class="o">.</span><span class="m">205128205128204</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">28</span><span class="o">.</span><span class="m">0987452264048</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset3</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">25</span><span class="o">.</span><span class="m">641025641025642</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">25</span><span class="o">.</span><span class="m">53464266230224</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset2</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">19</span><span class="o">.</span><span class="m">65811965811966</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">19</span><span class="o">.</span><span class="m">551736679396257</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset2</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">17</span><span class="o">.</span><span class="m">094017094017094</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">16</span><span class="o">.</span><span class="m">98763411529369</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset1</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">11</span><span class="o">.</span><span class="m">11111111111111</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">11</span><span class="o">.</span><span class="m">004728132387708</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset1</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">8</span><span class="o">.</span><span class="m">547008547008547</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">8</span><span class="o">.</span><span class="m">440625568285142</span><span class="o">%</span><span class="p">}</span><span class="nt">input</span><span class="o">,</span><span class="nt">textarea</span><span class="o">,</span><span class="nc">.uneditable-input</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.controls-row</span> <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]+[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">30px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span12</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span12</span><span class="o">,</span><span class="nc">.uneditable-input.span12</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">1156px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span11</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span11</span><span class="o">,</span><span class="nc">.uneditable-input.span11</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">1056px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span10</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span10</span><span class="o">,</span><span class="nc">.uneditable-input.span10</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">956px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span9</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span9</span><span class="o">,</span><span class="nc">.uneditable-input.span9</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">856px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span8</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span8</span><span class="o">,</span><span class="nc">.uneditable-input.span8</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">756px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span7</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span7</span><span class="o">,</span><span class="nc">.uneditable-input.span7</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">656px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span6</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span6</span><span class="o">,</span><span class="nc">.uneditable-input.span6</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">556px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span5</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span5</span><span class="o">,</span><span class="nc">.uneditable-input.span5</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">456px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span4</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span4</span><span class="o">,</span><span class="nc">.uneditable-input.span4</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">356px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span3</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span3</span><span class="o">,</span><span class="nc">.uneditable-input.span3</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">256px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span2</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span2</span><span class="o">,</span><span class="nc">.uneditable-input.span2</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">156px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span1</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span1</span><span class="o">,</span><span class="nc">.uneditable-input.span1</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">56px</span><span class="p">}</span><span class="nc">.thumbnails</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:-</span><span class="m">30px</span><span class="p">}</span><span class="nc">.thumbnails</span><span class="o">&gt;</span><span class="nt">li</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">30px</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.thumbnails</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">}}</span><span class="k">@media</span><span class="o">(</span><span class="nt">min-width</span><span class="nd">:768px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:979px</span><span class="o">)</span><span class="p">{</span><span class="nc">.row</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:-</span><span class="m">20px</span><span class="p">;</span><span class="o">*</span><span class="n">zoom</span><span class="o">:</span><span class="m">1</span><span class="p">}</span><span class="nc">.row</span><span class="nd">:before</span><span class="o">,</span><span class="nc">.row</span><span class="nd">:after</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="n">table</span><span class="p">;</span><span class="k">line-height</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="k">content</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">}</span><span class="nc">.row</span><span class="nd">:after</span><span class="p">{</span><span class="k">clear</span><span class="o">:</span><span class="k">both</span><span class="p">}</span><span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]</span><span class="p">{</span><span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span><span class="k">min-height</span><span class="o">:</span><span class="m">1px</span><span class="p">;</span><span class="k">margin-left</span><span class="o">:</span><span class="m">20px</span><span class="p">}</span><span class="nc">.container</span><span class="o">,</span><span class="nc">.navbar-static-top</span> <span class="nc">.container</span><span class="o">,</span><span class="nc">.navbar-fixed-top</span> <span class="nc">.container</span><span class="o">,</span><span class="nc">.navbar-fixed-bottom</span> <span class="nc">.container</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">724px</span><span class="p">}</span><span class="nc">.span12</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">724px</span><span class="p">}</span><span class="nc">.span11</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">662px</span><span class="p">}</span><span class="nc">.span10</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">600px</span><span class="p">}</span><span class="nc">.span9</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">538px</span><span class="p">}</span><span class="nc">.span8</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">476px</span><span class="p">}</span><span class="nc">.span7</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">414px</span><span class="p">}</span><span class="nc">.span6</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">352px</span><span class="p">}</span><span class="nc">.span5</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">290px</span><span class="p">}</span><span class="nc">.span4</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">228px</span><span class="p">}</span><span class="nc">.span3</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">166px</span><span class="p">}</span><span class="nc">.span2</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">104px</span><span class="p">}</span><span class="nc">.span1</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">42px</span><span class="p">}</span><span class="nc">.offset12</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">764px</span><span class="p">}</span><span class="nc">.offset11</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">702px</span><span class="p">}</span><span class="nc">.offset10</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">640px</span><span class="p">}</span><span class="nc">.offset9</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">578px</span><span class="p">}</span><span class="nc">.offset8</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">516px</span><span class="p">}</span><span class="nc">.offset7</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">454px</span><span class="p">}</span><span class="nc">.offset6</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">392px</span><span class="p">}</span><span class="nc">.offset5</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">330px</span><span class="p">}</span><span class="nc">.offset4</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">268px</span><span class="p">}</span><span class="nc">.offset3</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">206px</span><span class="p">}</span><span class="nc">.offset2</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">144px</span><span class="p">}</span><span class="nc">.offset1</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">82px</span><span class="p">}</span><span class="nc">.row-fluid</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="n">zoom</span><span class="o">:</span><span class="m">1</span><span class="p">}</span><span class="nc">.row-fluid</span><span class="nd">:before</span><span class="o">,</span><span class="nc">.row-fluid</span><span class="nd">:after</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="n">table</span><span class="p">;</span><span class="k">line-height</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="k">content</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">}</span><span class="nc">.row-fluid</span><span class="nd">:after</span><span class="p">{</span><span class="k">clear</span><span class="o">:</span><span class="k">both</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span><span class="k">float</span><span class="o">:</span><span class="k">left</span><span class="p">;</span><span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span><span class="k">min-height</span><span class="o">:</span><span class="m">30px</span><span class="p">;</span><span class="k">margin-left</span><span class="o">:</span><span class="m">2</span><span class="o">.</span><span class="m">7624309392265194</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">2</span><span class="o">.</span><span class="m">709239449864817</span><span class="o">%</span><span class="p">;</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span><span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.controls-row</span> <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]+[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">2</span><span class="o">.</span><span class="m">7624309392265194</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span12</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">99</span><span class="o">.</span><span class="m">94680851063829</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span11</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">91</span><span class="o">.</span><span class="m">43646408839778</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">91</span><span class="o">.</span><span class="m">38327259903608</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span10</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">82</span><span class="o">.</span><span class="m">87292817679558</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">82</span><span class="o">.</span><span class="m">81973668743387</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span9</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">74</span><span class="o">.</span><span class="m">30939226519337</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">74</span><span class="o">.</span><span class="m">25620077583166</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span8</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">65</span><span class="o">.</span><span class="m">74585635359117</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">65</span><span class="o">.</span><span class="m">69266486422946</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span7</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">57</span><span class="o">.</span><span class="m">18232044198895</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">57</span><span class="o">.</span><span class="m">12912895262725</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span6</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">48</span><span class="o">.</span><span class="m">61878453038674</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">48</span><span class="o">.</span><span class="m">56559304102504</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span5</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">40</span><span class="o">.</span><span class="m">05524861878453</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">40</span><span class="o">.</span><span class="m">00205712942283</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span4</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">31</span><span class="o">.</span><span class="m">491712707182323</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">31</span><span class="o">.</span><span class="m">43852121782062</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span3</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">22</span><span class="o">.</span><span class="m">92817679558011</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">22</span><span class="o">.</span><span class="m">87498530621841</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span2</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">14</span><span class="o">.</span><span class="m">3646408839779</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">14</span><span class="o">.</span><span class="m">311449394616199</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.span1</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">5</span><span class="o">.</span><span class="m">801104972375691</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">width</span><span class="o">:</span><span class="m">5</span><span class="o">.</span><span class="m">747913483013988</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset12</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">105</span><span class="o">.</span><span class="m">52486187845304</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">105</span><span class="o">.</span><span class="m">41847889972962</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset12</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">102</span><span class="o">.</span><span class="m">76243093922652</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">102</span><span class="o">.</span><span class="m">6560479605031</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset11</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">96</span><span class="o">.</span><span class="m">96132596685082</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">96</span><span class="o">.</span><span class="m">8549429881274</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset11</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">94</span><span class="o">.</span><span class="m">1988950276243</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">94</span><span class="o">.</span><span class="m">09251204890089</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset10</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">88</span><span class="o">.</span><span class="m">39779005524862</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">88</span><span class="o">.</span><span class="m">2914070765252</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset10</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">85</span><span class="o">.</span><span class="m">6353591160221</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">85</span><span class="o">.</span><span class="m">52897613729868</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset9</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">79</span><span class="o">.</span><span class="m">8342541436464</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">79</span><span class="o">.</span><span class="m">72787116492299</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset9</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">77</span><span class="o">.</span><span class="m">07182320441989</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">76</span><span class="o">.</span><span class="m">96544022569647</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset8</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">71</span><span class="o">.</span><span class="m">2707182320442</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">71</span><span class="o">.</span><span class="m">16433525332079</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset8</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">68</span><span class="o">.</span><span class="m">50828729281768</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">68</span><span class="o">.</span><span class="m">40190431409427</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset7</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">62</span><span class="o">.</span><span class="m">70718232044199</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">62</span><span class="o">.</span><span class="m">600799341718584</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset7</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">59</span><span class="o">.</span><span class="m">94475138121547</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">59</span><span class="o">.</span><span class="m">838368402492065</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset6</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">54</span><span class="o">.</span><span class="m">14364640883978</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">54</span><span class="o">.</span><span class="m">037263430116376</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset6</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">51</span><span class="o">.</span><span class="m">38121546961326</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">51</span><span class="o">.</span><span class="m">27483249088986</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset5</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">45</span><span class="o">.</span><span class="m">58011049723757</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">45</span><span class="o">.</span><span class="m">47372751851417</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset5</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">42</span><span class="o">.</span><span class="m">81767955801105</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">42</span><span class="o">.</span><span class="m">71129657928765</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset4</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">37</span><span class="o">.</span><span class="m">01657458563536</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">36</span><span class="o">.</span><span class="m">91019160691196</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset4</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">34</span><span class="o">.</span><span class="m">25414364640884</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">34</span><span class="o">.</span><span class="m">14776066768544</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset3</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">28</span><span class="o">.</span><span class="m">45303867403315</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">28</span><span class="o">.</span><span class="m">346655695309746</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset3</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">25</span><span class="o">.</span><span class="m">69060773480663</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">25</span><span class="o">.</span><span class="m">584224756083227</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset2</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">19</span><span class="o">.</span><span class="m">88950276243094</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">19</span><span class="o">.</span><span class="m">783119783707537</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset2</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">17</span><span class="o">.</span><span class="m">12707182320442</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">17</span><span class="o">.</span><span class="m">02068884448102</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset1</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">11</span><span class="o">.</span><span class="m">32596685082873</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">11</span><span class="o">.</span><span class="m">219583872105325</span><span class="o">%</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="nc">.offset1</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">8</span><span class="o">.</span><span class="m">56353591160221</span><span class="o">%</span><span class="p">;</span><span class="o">*</span><span class="k">margin-left</span><span class="o">:</span><span class="m">8</span><span class="o">.</span><span class="m">457152932878806</span><span class="o">%</span><span class="p">}</span><span class="nt">input</span><span class="o">,</span><span class="nt">textarea</span><span class="o">,</span><span class="nc">.uneditable-input</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.controls-row</span> <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]+[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">20px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span12</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span12</span><span class="o">,</span><span class="nc">.uneditable-input.span12</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">710px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span11</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span11</span><span class="o">,</span><span class="nc">.uneditable-input.span11</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">648px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span10</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span10</span><span class="o">,</span><span class="nc">.uneditable-input.span10</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">586px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span9</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span9</span><span class="o">,</span><span class="nc">.uneditable-input.span9</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">524px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span8</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span8</span><span class="o">,</span><span class="nc">.uneditable-input.span8</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">462px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span7</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span7</span><span class="o">,</span><span class="nc">.uneditable-input.span7</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">400px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span6</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span6</span><span class="o">,</span><span class="nc">.uneditable-input.span6</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">338px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span5</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span5</span><span class="o">,</span><span class="nc">.uneditable-input.span5</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">276px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span4</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span4</span><span class="o">,</span><span class="nc">.uneditable-input.span4</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">214px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span3</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span3</span><span class="o">,</span><span class="nc">.uneditable-input.span3</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">152px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span2</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span2</span><span class="o">,</span><span class="nc">.uneditable-input.span2</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">90px</span><span class="p">}</span><span class="nt">input</span><span class="nc">.span1</span><span class="o">,</span><span class="nt">textarea</span><span class="nc">.span1</span><span class="o">,</span><span class="nc">.uneditable-input.span1</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">28px</span><span class="p">}}</span><span class="k">@media</span><span class="o">(</span><span class="nt">max-width</span><span class="nd">:767px</span><span class="o">)</span><span class="p">{</span><span class="nt">body</span><span class="p">{</span><span class="k">padding-right</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span><span class="k">padding-left</span><span class="o">:</span><span class="m">20px</span><span class="p">}</span><span class="nc">.navbar-fixed-top</span><span class="o">,</span><span class="nc">.navbar-fixed-bottom</span><span class="o">,</span><span class="nc">.navbar-static-top</span><span class="p">{</span><span class="k">margin-right</span><span class="o">:-</span><span class="m">20px</span><span class="p">;</span><span class="k">margin-left</span><span class="o">:-</span><span class="m">20px</span><span class="p">}</span><span class="nc">.container-fluid</span><span class="p">{</span><span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.dl-horizontal</span> <span class="nt">dt</span><span class="p">{</span><span class="k">float</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="k">width</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span><span class="k">clear</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="k">text-align</span><span class="o">:</span><span class="k">left</span><span class="p">}</span><span class="nc">.dl-horizontal</span> <span class="nt">dd</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.container</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="k">auto</span><span class="p">}</span><span class="nc">.row-fluid</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">}</span><span class="nc">.row</span><span class="o">,</span><span class="nc">.thumbnails</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.thumbnails</span><span class="o">&gt;</span><span class="nt">li</span><span class="p">{</span><span class="k">float</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">],</span><span class="nc">.uneditable-input</span><span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">],</span><span class="nc">.row-fluid</span> <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span><span class="k">float</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span><span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span><span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">}</span><span class="nc">.span12</span><span class="o">,</span><span class="nc">.row-fluid</span> <span class="nc">.span12</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span><span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">}</span><span class="nc">.row-fluid</span> <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;offset&quot;</span><span class="o">]</span><span class="nd">:first-child</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.input-large</span><span class="o">,</span><span class="nc">.input-xlarge</span><span class="o">,</span><span class="nc">.input-xxlarge</span><span class="o">,</span><span class="nt">input</span><span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">],</span><span class="nt">select</span><span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">],</span><span class="nt">textarea</span><span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">],</span><span class="nc">.uneditable-input</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span><span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span><span class="k">min-height</span><span class="o">:</span><span class="m">30px</span><span class="p">;</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span><span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span><span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">}</span><span class="nc">.input-prepend</span> <span class="nt">input</span><span class="o">,</span><span class="nc">.input-append</span> <span class="nt">input</span><span class="o">,</span><span class="nc">.input-prepend</span> <span class="nt">input</span><span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">],</span><span class="nc">.input-append</span> <span class="nt">input</span><span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span><span class="k">width</span><span class="o">:</span><span class="k">auto</span><span class="p">}</span><span class="nc">.controls-row</span> <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]+[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&quot;span&quot;</span><span class="o">]</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.modal</span><span class="p">{</span><span class="k">position</span><span class="o">:</span><span class="k">fixed</span><span class="p">;</span><span class="k">top</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span><span class="k">right</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span><span class="k">left</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span><span class="k">width</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span><span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.modal.fade</span><span class="p">{</span><span class="k">top</span><span class="o">:-</span><span class="m">100px</span><span class="p">}</span><span class="nc">.modal.fade.in</span><span class="p">{</span><span class="k">top</span><span class="o">:</span><span class="m">20px</span><span class="p">}}</span><span class="k">@media</span><span class="o">(</span><span class="nt">max-width</span><span class="nd">:480px</span><span class="o">)</span><span class="p">{</span><span class="nc">.nav-collapse</span><span class="p">{</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span><span class="n">translate3d</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="p">)}</span><span class="nc">.page-header</span> <span class="nt">h1</span> <span class="nt">small</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span><span class="k">line-height</span><span class="o">:</span><span class="m">20px</span><span class="p">}</span><span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">&quot;checkbox&quot;</span><span class="o">],</span><span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">&quot;radio&quot;</span><span class="o">]</span><span class="p">{</span><span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">}</span><span class="nc">.form-horizontal</span> <span class="nc">.control-label</span><span class="p">{</span><span class="k">float</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="k">width</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span><span class="k">padding-top</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="k">text-align</span><span class="o">:</span><span class="k">left</span><span class="p">}</span><span class="nc">.form-horizontal</span> <span class="nc">.controls</span><span class="p">{</span><span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.form-horizontal</span> <span class="nc">.control-list</span><span class="p">{</span><span class="k">padding-top</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.form-horizontal</span> <span class="nc">.form-actions</span><span class="p">{</span><span class="k">padding-right</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span><span class="k">padding-left</span><span class="o">:</span><span class="m">10px</span><span class="p">}</span><span class="nc">.media</span> <span class="nc">.pull-left</span><span class="o">,</span><span class="nc">.media</span> <span class="nc">.pull-right</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">;</span><span class="k">float</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="k">margin-bottom</span><span class="o">:</span><span class="m">10px</span><span class="p">}</span><span class="nc">.media-object</span><span class="p">{</span><span class="k">margin-right</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.modal</span><span class="p">{</span><span class="k">top</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span><span class="k">right</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span><span class="k">left</span><span class="o">:</span><span class="m">10px</span><span class="p">}</span><span class="nc">.modal-header</span> <span class="nc">.close</span><span class="p">{</span><span class="k">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span><span class="k">margin</span><span class="o">:-</span><span class="m">10px</span><span class="p">}</span><span class="nc">.carousel-caption</span><span class="p">{</span><span class="k">position</span><span class="o">:</span><span class="k">static</span><span class="p">}}</span><span class="k">@media</span><span class="o">(</span><span class="nt">max-width</span><span class="nd">:979px</span><span class="o">)</span><span class="p">{</span><span class="nt">body</span><span class="p">{</span><span class="k">padding-top</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.navbar-fixed-top</span><span class="o">,</span><span class="nc">.navbar-fixed-bottom</span><span class="p">{</span><span class="k">position</span><span class="o">:</span><span class="k">static</span><span class="p">}</span><span class="nc">.navbar-fixed-top</span><span class="p">{</span><span class="k">margin-bottom</span><span class="o">:</span><span class="m">20px</span><span class="p">}</span><span class="nc">.navbar-fixed-bottom</span><span class="p">{</span><span class="k">margin-top</span><span class="o">:</span><span class="m">20px</span><span class="p">}</span><span class="nc">.navbar-fixed-top</span> <span class="nc">.navbar-inner</span><span class="o">,</span><span class="nc">.navbar-fixed-bottom</span> <span class="nc">.navbar-inner</span><span class="p">{</span><span class="k">padding</span><span class="o">:</span><span class="m">5px</span><span class="p">}</span><span class="nc">.navbar</span> <span class="nc">.container</span><span class="p">{</span><span class="k">width</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span><span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.navbar</span> <span class="nc">.brand</span><span class="p">{</span><span class="k">padding-right</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span><span class="k">padding-left</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span><span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">-5px</span><span class="p">}</span><span class="nc">.nav-collapse</span><span class="p">{</span><span class="k">clear</span><span class="o">:</span><span class="k">both</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.nav</span><span class="p">{</span><span class="k">float</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">0</span> <span class="m">10px</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.nav</span><span class="o">&gt;</span><span class="nt">li</span><span class="p">{</span><span class="k">float</span><span class="o">:</span><span class="k">none</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.nav</span><span class="o">&gt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">a</span><span class="p">{</span><span class="k">margin-bottom</span><span class="o">:</span><span class="m">2px</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.nav</span><span class="o">&gt;</span><span class="nc">.divider-vertical</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.nav</span> <span class="nc">.nav-header</span><span class="p">{</span><span class="k">color</span><span class="o">:</span><span class="m">#777</span><span class="p">;</span><span class="k">text-shadow</span><span class="o">:</span><span class="k">none</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.nav</span><span class="o">&gt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">a</span><span class="o">,</span><span class="nc">.nav-collapse</span> <span class="nc">.dropdown-menu</span> <span class="nt">a</span><span class="p">{</span><span class="k">padding</span><span class="o">:</span><span class="m">9px</span> <span class="m">15px</span><span class="p">;</span><span class="k">font-weight</span><span class="o">:</span><span class="k">bold</span><span class="p">;</span><span class="k">color</span><span class="o">:</span><span class="m">#777</span><span class="p">;</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">3px</span><span class="p">;</span><span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">3px</span><span class="p">;</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">3px</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.btn</span><span class="p">{</span><span class="k">padding</span><span class="o">:</span><span class="m">4px</span> <span class="m">10px</span> <span class="m">4px</span><span class="p">;</span><span class="k">font-weight</span><span class="o">:</span><span class="k">normal</span><span class="p">;</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">4px</span><span class="p">;</span><span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">4px</span><span class="p">;</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">4px</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.dropdown-menu</span> <span class="nt">li</span><span class="o">+</span><span class="nt">li</span> <span class="nt">a</span><span class="p">{</span><span class="k">margin-bottom</span><span class="o">:</span><span class="m">2px</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.nav</span><span class="o">&gt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">a</span><span class="nd">:hover</span><span class="o">,</span><span class="nc">.nav-collapse</span> <span class="nc">.nav</span><span class="o">&gt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">a</span><span class="nd">:focus</span><span class="o">,</span><span class="nc">.nav-collapse</span> <span class="nc">.dropdown-menu</span> <span class="nt">a</span><span class="nd">:hover</span><span class="o">,</span><span class="nc">.nav-collapse</span> <span class="nc">.dropdown-menu</span> <span class="nt">a</span><span class="nd">:focus</span><span class="p">{</span><span class="k">background-color</span><span class="o">:</span><span class="m">#f2f2f2</span><span class="p">}</span><span class="nc">.navbar-inverse</span> <span class="nc">.nav-collapse</span> <span class="nc">.nav</span><span class="o">&gt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">a</span><span class="o">,</span><span class="nc">.navbar-inverse</span> <span class="nc">.nav-collapse</span> <span class="nc">.dropdown-menu</span> <span class="nt">a</span><span class="p">{</span><span class="k">color</span><span class="o">:</span><span class="m">#999</span><span class="p">}</span><span class="nc">.navbar-inverse</span> <span class="nc">.nav-collapse</span> <span class="nc">.nav</span><span class="o">&gt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">a</span><span class="nd">:hover</span><span class="o">,</span><span class="nc">.navbar-inverse</span> <span class="nc">.nav-collapse</span> <span class="nc">.nav</span><span class="o">&gt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">a</span><span class="nd">:focus</span><span class="o">,</span><span class="nc">.navbar-inverse</span> <span class="nc">.nav-collapse</span> <span class="nc">.dropdown-menu</span> <span class="nt">a</span><span class="nd">:hover</span><span class="o">,</span><span class="nc">.navbar-inverse</span> <span class="nc">.nav-collapse</span> <span class="nc">.dropdown-menu</span> <span class="nt">a</span><span class="nd">:focus</span><span class="p">{</span><span class="k">background-color</span><span class="o">:</span><span class="m">#111</span><span class="p">}</span><span class="nc">.nav-collapse.in</span> <span class="nc">.btn-group</span><span class="p">{</span><span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="k">margin-top</span><span class="o">:</span><span class="m">5px</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.dropdown-menu</span><span class="p">{</span><span class="k">position</span><span class="o">:</span><span class="k">static</span><span class="p">;</span><span class="k">top</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span><span class="k">left</span><span class="o">:</span><span class="k">auto</span><span class="p">;</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="k">float</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="k">max-width</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="m">15px</span><span class="p">;</span><span class="k">background-color</span><span class="o">:</span><span class="k">transparent</span><span class="p">;</span><span class="k">border</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span><span class="k">none</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.open</span><span class="o">&gt;</span><span class="nc">.dropdown-menu</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.dropdown-menu</span><span class="nd">:before</span><span class="o">,</span><span class="nc">.nav-collapse</span> <span class="nc">.dropdown-menu</span><span class="nd">:after</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.dropdown-menu</span> <span class="nc">.divider</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.nav</span><span class="o">&gt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nc">.dropdown-menu</span><span class="nd">:before</span><span class="o">,</span><span class="nc">.nav-collapse</span> <span class="nc">.nav</span><span class="o">&gt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nc">.dropdown-menu</span><span class="nd">:after</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">none</span><span class="p">}</span><span class="nc">.nav-collapse</span> <span class="nc">.navbar-form</span><span class="o">,</span><span class="nc">.nav-collapse</span> <span class="nc">.navbar-search</span><span class="p">{</span><span class="k">float</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="k">padding</span><span class="o">:</span><span class="m">10px</span> <span class="m">15px</span><span class="p">;</span><span class="k">margin</span><span class="o">:</span><span class="m">10px</span> <span class="m">0</span><span class="p">;</span><span class="k">border-top</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#f2f2f2</span><span class="p">;</span><span class="k">border-bottom</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#f2f2f2</span><span class="p">;</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span><span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">1</span><span class="p">)</span><span class="o">,</span><span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">1</span><span class="p">);</span><span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span><span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">1</span><span class="p">)</span><span class="o">,</span><span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">1</span><span class="p">);</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span><span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">1</span><span class="p">)</span><span class="o">,</span><span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,</span><span class="m">255</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">1</span><span class="p">)}</span><span class="nc">.navbar-inverse</span> <span class="nc">.nav-collapse</span> <span class="nc">.navbar-form</span><span class="o">,</span><span class="nc">.navbar-inverse</span> <span class="nc">.nav-collapse</span> <span class="nc">.navbar-search</span><span class="p">{</span><span class="k">border-top-color</span><span class="o">:</span><span class="m">#111</span><span class="p">;</span><span class="k">border-bottom-color</span><span class="o">:</span><span class="m">#111</span><span class="p">}</span><span class="nc">.navbar</span> <span class="nc">.nav-collapse</span> <span class="nc">.nav.pull-right</span><span class="p">{</span><span class="k">float</span><span class="o">:</span><span class="k">none</span><span class="p">;</span><span class="k">margin-left</span><span class="o">:</span><span class="m">0</span><span class="p">}</span><span class="nc">.nav-collapse</span><span class="o">,</span><span class="nc">.nav-collapse.collapse</span><span class="p">{</span><span class="k">height</span><span class="o">:</span><span class="m">0</span><span class="p">;</span><span class="k">overflow</span><span class="o">:</span><span class="k">hidden</span><span class="p">}</span><span class="nc">.navbar</span> <span class="nc">.btn-navbar</span><span class="p">{</span><span class="k">display</span><span class="o">:</span><span class="k">block</span><span class="p">}</span><span class="nc">.navbar-static</span> <span class="nc">.navbar-inner</span><span class="p">{</span><span class="k">padding-right</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span><span class="k">padding-left</span><span class="o">:</span><span class="m">10px</span><span class="p">}}</span><span class="k">@media</span><span class="o">(</span><span class="nt">min-width</span><span class="nd">:980px</span><span class="o">)</span><span class="p">{</span><span class="nc">.nav-collapse.collapse</span><span class="p">{</span><span class="k">height</span><span class="o">:</span><span class="k">auto</span><span class="cp">!important</span><span class="p">;</span><span class="k">overflow</span><span class="o">:</span><span class="k">visible</span><span class="cp">!important</span><span class="p">}}</span></div></pre></div>
+          </td>
+        </tr>
+      </table>
+  </div>
+
+  </div>
+</div>
+
+<a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" class="js-jump-to-line" style="display:none">Jump to Line</a>
+<div id="jump-to-line" style="display:none">
+  <form accept-charset="UTF-8" class="js-jump-to-line-form">
+    <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" autofocus>
+    <button type="submit" class="button">Go</button>
+  </form>
+</div>
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/">
+      <span class="mega-octicon octicon-mark-github"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2013 <span title="0.30404s from fe17.rs.github.com">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+          <div class="suggester-container">
+              <div class="suggester fullscreen-suggester js-navigation-container" id="fullscreen_suggester"
+                 data-url="/Alem/django-jfu/suggestions/commit">
+              </div>
+          </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped leftwards" title="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped leftwards"
+      title="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-remove-close close ajax-error-dismiss"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+    
+  </body>
+</html>
+

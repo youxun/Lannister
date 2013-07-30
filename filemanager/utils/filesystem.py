@@ -59,7 +59,6 @@ class Directory(object):
                 os.path.join(self.path, subdirectory))
             item_count = len(subsubdirectory) + len(subfiles)
             self.subdirectories.append((subdirectory, item_count))
-
         self.files = []
         for file in files:
             if file.startswith('.'):
@@ -71,7 +70,6 @@ class Directory(object):
         if sort == 'name':
             self.subdirectories.sort(
                 key=lambda subdirectory: subdirectory[0].lower(), reverse=reverse)
-
             self.files.sort(key=lambda file: file[0].lower(), reverse=reverse)
         else:
             self.subdirectories.sort(
